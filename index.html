@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="src/icon.jpg">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader"><div class="loader"></div></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Deepak</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="full-screen-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to My Portfolio</h1>
+            <p class="hero-subtitle">Creative HTML CSS Designer & Developer</p>
+        </div>
+        <div id="scroll-indicator"></div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="parallax">
+        <div class="container">
+            <h2 class="section-title">My Work</h2>
+            <div class="image-item">
+                <a href="https://deeps1970.github.io/Deeps1970/" target="_blank" rel="noopener noreferrer">
+                    <img src="src/bluegrass.png" alt="Restaurant Webpage" class="img">
+                    <div class="overlay">Restaurant Webpage</div>
+                </a>
+            </div>
+            <div class="image-item">
+                <a href="https://deepak1970.neocities.org/deepak/" target="_blank" rel="noopener noreferrer">
+                    <img src="src/perfumy.png" alt="Perfume Brand Webpage" class="img">
+                    <div class="overlay">Perfume Brand Webpage</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>I'm a passionate designer and developer with a love for creating stunning websites...</p>
+            <div class="skills">
+                <div class="skill-bar"><span>HTML</span><div class="progress" data-percent="90%"></div></div>
+                <div class="skill-bar"><span>CSS</span><div class="progress" data-percent="80%"></div></div>
+                <div class="skill-bar"><span>JavaScript</span><div class="progress" data-percent="70%"></div></div>
+                <div class="skill-bar"><span>Python</span><div class="progress" data-percent="85%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Social Media Icons -->
+    <div class="social-media">
+        <a href="https://www.instagram.com/_.cltchr7._/" target="_.cltchr7._" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@dragop7801" target="@dragop7801" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.x.com/Deeps254217" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100009260421836" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer><p>&copy; 2024 Deepak's Portfolio. All rights reserved.</p></footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
