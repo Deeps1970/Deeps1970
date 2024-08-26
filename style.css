@@ -337,6 +337,7 @@ form button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-bottom: 10px;
 }
 
 form button:hover {
