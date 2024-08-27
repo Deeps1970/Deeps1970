@@ -425,7 +425,7 @@ footer {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #333333;
+    background-color: #000000;
     color: #ffffff;
     text-align: center;
     line-height: 40px;
@@ -434,6 +434,6 @@ footer {
 }
 
 .social-media a:hover {
-    background-color: #5ca4a9;
+    background-color: #333333;
     transform: scale(1.1); /* Slightly increase size on hover */
 }
