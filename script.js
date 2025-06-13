@@ -39,3 +39,13 @@ document.querySelector('.stylish-name').classList.add('animate-name');
 setTimeout(() => {
     document.querySelector('.stylish-name').classList.remove('animate-name');
 }, 3000); /* Adjust time as needed */
+
+//side-bar menu
+function showSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+}
+function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+}
