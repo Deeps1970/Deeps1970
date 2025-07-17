@@ -3,7 +3,7 @@
 Welcome to my fully responsive **Personal Portfolio Website** built with **HTML, CSS, and JavaScript**.  
 This portfolio showcases my work, skills, and personal information in a clean, animated, and modern layout.
 
-## 🖥️ Live Demo
+- ## 🖥️ Live Demo
 
 [Click to See Live Demo](https://deeps1970.github.io/Deeps1970/)
 
