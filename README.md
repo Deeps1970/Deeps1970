@@ -5,7 +5,7 @@ This portfolio showcases my work, skills, and personal information in a clean, a
 
 ## 🖥️ Live Demo
 
-![Click to See Live Demo](https://deeps1970.github.io/Deeps1970/)
+[Click to See Live Demo](https://deeps1970.github.io/Deeps1970/)
 
 ## 🚀 Features
 
