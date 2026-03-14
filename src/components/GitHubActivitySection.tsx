@@ -8,21 +8,19 @@ const GitHubActivitySection = () => {
           GitHub Activity
         </h2>
         <div className="space-y-6">
-          {/* Contribution heatmap */}
           <div className="border border-border rounded-xl p-4 bg-card overflow-x-auto">
             <img
-              src={`https://ghchart.rshah.org/${username}`}
+              src={`https://ghchart.rshah.org/3b82f6/${username}`}
               alt="GitHub Contribution Heatmap"
               className="w-full max-w-3xl mx-auto"
               loading="lazy"
             />
           </div>
 
-          {/* Stats row */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="border border-border rounded-xl p-4 bg-card overflow-hidden">
               <img
-                src={`https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&hide_border=true&bg_color=ffffff&title_color=0a0a0a&text_color=666666&icon_color=2563eb`}
+                src={`https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&hide_border=true&bg_color=1f2937&title_color=f1f5f9&text_color=94a3b8&icon_color=3b82f6`}
                 alt="GitHub Stats"
                 className="w-full"
                 loading="lazy"
@@ -30,7 +28,7 @@ const GitHubActivitySection = () => {
             </div>
             <div className="border border-border rounded-xl p-4 bg-card overflow-hidden">
               <img
-                src={`https://github-readme-streak-stats.herokuapp.com/?user=${username}&hide_border=true&background=ffffff&ring=2563eb&fire=2563eb&currStreakLabel=0a0a0a&sideLabels=0a0a0a&dates=666666`}
+                src={`https://github-readme-streak-stats.herokuapp.com/?user=${username}&hide_border=true&background=1f2937&ring=3b82f6&fire=3b82f6&currStreakLabel=f1f5f9&sideLabels=f1f5f9&dates=94a3b8&currStreakNum=f1f5f9&sideNums=f1f5f9`}
                 alt="GitHub Streak Stats"
                 className="w-full"
                 loading="lazy"

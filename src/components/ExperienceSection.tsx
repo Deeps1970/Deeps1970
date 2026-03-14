@@ -30,7 +30,7 @@ const ExperienceSection = () => {
           {internships.map((item, i) => (
             <div
               key={i}
-              className="bg-card border border-border rounded-xl p-6 md:p-8"
+              className="bg-card border border-border rounded-xl p-6 md:p-8 transition-shadow hover:shadow-lg hover:shadow-accent/5"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                 <div>

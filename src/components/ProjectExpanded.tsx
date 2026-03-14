@@ -12,16 +12,14 @@ const ProjectExpanded = ({ project, onClose }: ProjectExpandedProps) => {
     <AnimatePresence>
       {project && (
         <>
-          {/* Backdrop */}
           <motion.div
-            className="fixed inset-0 z-50 bg-foreground/30 backdrop-blur-sm"
+            className="fixed inset-0 z-50 bg-background/60 backdrop-blur-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
           />
 
-          {/* Panel — truly centered */}
           <motion.div
             className="fixed z-50 inset-0 flex items-center justify-center p-4"
             initial={{ opacity: 0 }}
@@ -29,23 +27,21 @@ const ProjectExpanded = ({ project, onClose }: ProjectExpandedProps) => {
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="relative w-full max-w-4xl bg-card rounded-xl border border-border shadow-xl overflow-hidden flex flex-col md:flex-row"
+              className="relative w-full max-w-4xl bg-card rounded-xl border border-border shadow-2xl overflow-hidden flex flex-col md:flex-row"
               initial={{ opacity: 0, scale: 0.95, y: 10 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 10 }}
               transition={{ type: "spring", duration: 0.4, bounce: 0 }}
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Close button */}
               <button
                 onClick={onClose}
-                className="absolute top-3 right-3 z-10 p-2 rounded-lg bg-card/80 backdrop-blur-sm border border-border hover:bg-secondary transition-colors"
+                className="absolute top-3 right-3 z-10 p-2 rounded-lg bg-card border border-border hover:bg-muted transition-colors"
                 aria-label="Close"
               >
                 <X size={16} />
               </button>
 
-              {/* Image */}
               <div className="md:w-3/5 shrink-0">
                 <img
                   src={project.image}
@@ -54,7 +50,6 @@ const ProjectExpanded = ({ project, onClose }: ProjectExpandedProps) => {
                 />
               </div>
 
-              {/* Details */}
               <div className="p-6 md:p-8 flex flex-col justify-center gap-4 md:w-2/5">
                 <h3 className="text-2xl font-medium tracking-display text-foreground">
                   {project.title}
@@ -67,7 +62,7 @@ const ProjectExpanded = ({ project, onClose }: ProjectExpandedProps) => {
                   {project.tech.map((t) => (
                     <span
                       key={t}
-                      className="px-2 py-1 text-xs font-mono text-muted-foreground bg-secondary rounded-md border border-border"
+                      className="px-2 py-1 text-xs font-mono text-muted-foreground bg-muted rounded-md border border-border"
                     >
                       {t}
                     </span>
@@ -80,7 +75,7 @@ const ProjectExpanded = ({ project, onClose }: ProjectExpandedProps) => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity"
+                      className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-accent text-accent-foreground rounded-lg hover:brightness-110 transition-all"
                     >
                       <Github size={16} />
                       GitHub
@@ -91,7 +86,7 @@ const ProjectExpanded = ({ project, onClose }: ProjectExpandedProps) => {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium border border-border rounded-lg hover:bg-secondary transition-colors text-foreground"
+                      className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium border border-border rounded-lg hover:bg-muted transition-colors text-foreground"
                     >
                       <ExternalLink size={16} />
                       Live

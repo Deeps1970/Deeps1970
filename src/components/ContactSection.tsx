@@ -31,7 +31,7 @@ const ContactSection = () => {
                 name="name"
                 type="text"
                 required
-                className="w-full px-4 py-2.5 text-sm bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-foreground placeholder:text-muted-foreground"
+                className="w-full px-4 py-2.5 text-sm bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-foreground placeholder:text-muted-foreground"
                 placeholder="Your name"
               />
             </div>
@@ -44,7 +44,7 @@ const ContactSection = () => {
                 name="email"
                 type="email"
                 required
-                className="w-full px-4 py-2.5 text-sm bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-foreground placeholder:text-muted-foreground"
+                className="w-full px-4 py-2.5 text-sm bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-foreground placeholder:text-muted-foreground"
                 placeholder="you@example.com"
               />
             </div>
@@ -57,13 +57,13 @@ const ContactSection = () => {
                 name="message"
                 rows={5}
                 required
-                className="w-full px-4 py-2.5 text-sm bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-foreground placeholder:text-muted-foreground resize-none"
+                className="w-full px-4 py-2.5 text-sm bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-foreground placeholder:text-muted-foreground resize-none"
                 placeholder="Tell me about your project..."
               />
             </div>
             <button
               type="submit"
-              className="inline-flex items-center px-6 py-3 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity"
+              className="inline-flex items-center px-6 py-3 text-sm font-medium bg-accent text-accent-foreground rounded-lg hover:brightness-110 transition-all"
             >
               Send Message
             </button>

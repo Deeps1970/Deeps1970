@@ -55,9 +55,10 @@ const SelectedWorkSection = () => {
         </p>
 
         <div className="relative">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-0 border border-border rounded-xl overflow-hidden bg-card shadow-sm">
-            {/* Image */}
-            <div className="md:col-span-7">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-0 border border-border rounded-xl overflow-hidden bg-card shadow-lg shadow-accent/5">
+            {/* Image with subtle accent overlay */}
+            <div className="md:col-span-7 relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent pointer-events-none z-10" />
               <img
                 src={project.image}
                 alt={project.title}
@@ -65,7 +66,6 @@ const SelectedWorkSection = () => {
               />
             </div>
 
-            {/* Details */}
             <div className="md:col-span-5 p-8 flex flex-col justify-center gap-5">
               <div>
                 <span className="text-xs font-mono text-accent uppercase tracking-wider">
@@ -86,10 +86,7 @@ const SelectedWorkSection = () => {
                 </p>
                 <ul className="space-y-1.5">
                   {project.features.map((f) => (
-                    <li
-                      key={f}
-                      className="text-sm text-muted-foreground flex items-center gap-2"
-                    >
+                    <li key={f} className="text-sm text-muted-foreground flex items-center gap-2">
                       <span className="w-1 h-1 rounded-full bg-accent shrink-0" />
                       {f}
                     </li>
@@ -101,7 +98,7 @@ const SelectedWorkSection = () => {
                 {project.tech.map((t) => (
                   <span
                     key={t}
-                    className="px-2 py-1 text-xs font-mono text-muted-foreground bg-secondary rounded-md border border-border"
+                    className="px-2 py-1 text-xs font-mono text-muted-foreground bg-muted rounded-md border border-border"
                   >
                     {t}
                   </span>
@@ -113,7 +110,7 @@ const SelectedWorkSection = () => {
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity"
+                  className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-accent text-accent-foreground rounded-lg hover:brightness-110 transition-all"
                 >
                   <ExternalLink size={16} />
                   Live Demo
@@ -122,7 +119,7 @@ const SelectedWorkSection = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium border border-border rounded-lg hover:bg-secondary transition-colors text-foreground"
+                  className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium border border-border rounded-lg hover:bg-muted transition-colors text-foreground"
                 >
                   <Github size={16} />
                   GitHub
@@ -131,33 +128,28 @@ const SelectedWorkSection = () => {
             </div>
           </div>
 
-          {/* Carousel arrows — only rendered when multiple projects exist */}
           {hasMultiple && (
             <>
               <button
                 onClick={prev}
-                className="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card/90 border border-border shadow-sm hover:bg-secondary transition-colors"
+                className="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card border border-border shadow-sm hover:bg-muted transition-colors"
                 aria-label="Previous project"
               >
                 <ChevronLeft size={20} />
               </button>
               <button
                 onClick={next}
-                className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card/90 border border-border shadow-sm hover:bg-secondary transition-colors"
+                className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card border border-border shadow-sm hover:bg-muted transition-colors"
                 aria-label="Next project"
               >
                 <ChevronRight size={20} />
               </button>
-
-              {/* Dots */}
               <div className="flex justify-center gap-2 mt-4">
                 {featuredProjects.map((_, i) => (
                   <button
                     key={i}
                     onClick={() => setIndex(i)}
-                    className={`w-2 h-2 rounded-full transition-colors ${
-                      i === index ? "bg-accent" : "bg-border"
-                    }`}
+                    className={`w-2 h-2 rounded-full transition-colors ${i === index ? "bg-accent" : "bg-border"}`}
                     aria-label={`Go to project ${i + 1}`}
                   />
                 ))}

@@ -1,26 +1,10 @@
 import { Award } from "lucide-react";
 
 const certifications = [
-  {
-    title: "Full Stack Web Development",
-    org: "Udemy",
-    year: "2024",
-  },
-  {
-    title: "MERN Stack Masterclass",
-    org: "NoviTech R&D Pvt Ltd",
-    year: "2024",
-  },
-  {
-    title: "Full Stack Development Webinar",
-    org: "Guvi",
-    year: "2024",
-  },
-  {
-    title: "Git & GitHub Workshop",
-    org: "SRM Institute",
-    year: "2024",
-  },
+  { title: "Full Stack Web Development", org: "Udemy", year: "2024" },
+  { title: "MERN Stack Masterclass", org: "NoviTech R&D Pvt Ltd", year: "2024" },
+  { title: "Full Stack Development Webinar", org: "Guvi", year: "2024" },
+  { title: "Git & GitHub Workshop", org: "SRM Institute", year: "2024" },
 ];
 
 const CertificationsSection = () => {
@@ -34,9 +18,9 @@ const CertificationsSection = () => {
           {certifications.map((cert, i) => (
             <div
               key={i}
-              className="flex items-start gap-4 border border-border rounded-xl p-5 bg-card"
+              className="flex items-start gap-4 border border-border rounded-xl p-5 bg-card transition-shadow hover:shadow-lg hover:shadow-accent/5"
             >
-              <div className="p-2 bg-secondary rounded-lg shrink-0">
+              <div className="p-2 bg-muted rounded-lg shrink-0">
                 <Award size={20} className="text-accent" />
               </div>
               <div>
