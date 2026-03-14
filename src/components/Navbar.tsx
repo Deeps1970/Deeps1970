@@ -4,8 +4,12 @@ import { Menu, X } from "lucide-react";
 const links = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
+  { label: "Selected Work", href: "#selected-work" },
   { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
+  { label: "Certifications", href: "#certifications" },
+  { label: "GitHub", href: "#github-activity" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -20,7 +24,7 @@ const Navbar = () => {
         </a>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-6">
           {links.map((l) => (
             <a
               key={l.href}
@@ -35,7 +39,7 @@ const Navbar = () => {
         {/* Mobile toggle */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden p-2 text-foreground"
+          className="lg:hidden p-2 text-foreground"
           aria-label="Toggle menu"
         >
           {open ? <X size={20} /> : <Menu size={20} />}
@@ -44,7 +48,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-border bg-background">
+        <div className="lg:hidden border-t border-border bg-background">
           <div className="flex flex-col px-6 py-4 gap-4">
             {links.map((l) => (
               <a

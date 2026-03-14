@@ -1,4 +1,4 @@
-import { Github, Linkedin, ArrowDown } from "lucide-react";
+import { Github, Linkedin, ArrowDown, MapPin } from "lucide-react";
 import profileImg from "@/assets/profile.jpeg";
 
 const HeroSection = () => {
@@ -9,15 +9,22 @@ const HeroSection = () => {
           {/* Text */}
           <div className="md:col-span-7">
             <p className="text-sm font-mono text-muted-foreground mb-4">
-              Hi, I'm Deepak —
+              Hi, I'm
             </p>
-            <h1 className="text-4xl md:text-5xl font-medium tracking-display text-foreground mb-6 leading-tight">
-              AI/ML &amp; <span className="text-accent">Full Stack</span> Developer.
+            <h1 className="text-4xl md:text-5xl font-medium tracking-display text-foreground mb-3 leading-tight">
+              Deepak B T
             </h1>
-            <p className="text-lg text-muted-foreground max-w-prose mb-8 leading-relaxed">
-              Building production-grade applications with a focus on machine learning
-              integration and performant architectures. Passionate about turning complex
-              problems into elegant, scalable solutions.
+            <p className="text-xl md:text-2xl text-accent font-medium mb-3">
+              AI/ML &amp; Full Stack Developer
+            </p>
+            <p className="inline-flex items-center gap-1.5 text-sm text-muted-foreground mb-6">
+              <MapPin size={14} />
+              Chennai, Tamil Nadu, India
+            </p>
+            <p className="text-base text-muted-foreground max-w-prose mb-8 leading-relaxed">
+              Front-end developer with hands-on MERN-stack internship experience and strong
+              proficiency in HTML, CSS, Tailwind CSS, JavaScript, and Git. Experienced in
+              building responsive applications and learning modern AI and full stack technologies.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -52,7 +59,7 @@ const HeroSection = () => {
           <div className="md:col-span-5 flex justify-center md:justify-end">
             <img
               src={profileImg}
-              alt="Deepak — AI/ML & Full Stack Developer"
+              alt="Deepak B T — AI/ML & Full Stack Developer"
               className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-500 border border-border"
             />
           </div>
