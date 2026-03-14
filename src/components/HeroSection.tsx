@@ -24,9 +24,11 @@ const HeroSection = () => {
               Chennai, Tamil Nadu, India
             </p>
             <p className="text-base text-muted-foreground max-w-prose mb-8 leading-relaxed">
-              Front-end developer with hands-on MERN-stack internship experience and strong
-              proficiency in HTML, CSS, Tailwind CSS, JavaScript, and Git. Experienced in
-              building responsive applications and learning modern AI and full stack technologies.
+              AI/ML and Full Stack developer with hands-on experience building intelligent
+              web applications and scalable full stack systems. Skilled in modern frontend
+              technologies, backend development, and integrating AI capabilities into real-world
+              products. Passionate about creating impactful software that combines data,
+              intelligence, and user-centric design.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
