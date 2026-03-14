@@ -2,7 +2,6 @@ import { Github, Linkedin, ArrowDown, MapPin } from "lucide-react";
 import profileImg from "@/assets/profile.jpeg";
 import { motion } from "framer-motion";
 import SectionGlow from "./SectionGlow";
-import WireframeSphere from "./WireframeSphere";
 import AnimatedGridLines from "./AnimatedGridLines";
 import TypewriterText from "./TypewriterText";
 import { useState } from "react";
