@@ -17,7 +17,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-card">
       <div className="container max-w-6xl mx-auto flex items-center justify-between h-16 px-6">
         <a href="#home" className="text-lg font-semibold tracking-display text-foreground">
           Deepak<span className="text-accent">.</span>
@@ -29,7 +29,7 @@ const Navbar = () => {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm text-muted-foreground hover:text-accent transition-colors"
             >
               {l.label}
             </a>
@@ -48,14 +48,14 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {open && (
-        <div className="lg:hidden border-t border-border bg-background">
+        <div className="lg:hidden border-t border-card bg-background/95 backdrop-blur-md">
           <div className="flex flex-col px-6 py-4 gap-4">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-muted-foreground hover:text-accent transition-colors"
               >
                 {l.label}
               </a>

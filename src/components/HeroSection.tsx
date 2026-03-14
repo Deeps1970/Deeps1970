@@ -1,15 +1,24 @@
 import { Github, Linkedin, ArrowDown, MapPin } from "lucide-react";
 import profileImg from "@/assets/profile.jpeg";
+import { motion } from "framer-motion";
 
 const LINKEDIN = "https://www.linkedin.com/in/deepak1970/";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="pt-16 min-h-screen flex items-center">
-      <div className="container max-w-6xl mx-auto px-6 py-12">
+    <section id="home" className="pt-16 min-h-screen flex items-center relative overflow-hidden">
+      {/* Subtle radial gradient */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(217_91%_60%/0.08),transparent_60%)]" />
+
+      <div className="container max-w-6xl mx-auto px-6 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           {/* Text */}
-          <div className="md:col-span-7">
+          <motion.div
+            className="md:col-span-7"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <p className="text-sm font-mono text-muted-foreground mb-4">
               Hi, I'm
             </p>
@@ -33,7 +42,7 @@ const HeroSection = () => {
             <div className="flex flex-wrap gap-4">
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:opacity-90 transition-opacity text-sm font-medium"
+                className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-lg hover:brightness-110 transition-all text-sm font-medium"
               >
                 View Projects
                 <ArrowDown size={16} />
@@ -42,7 +51,7 @@ const HeroSection = () => {
                 href="https://github.com/Deeps1970"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center p-3 border border-border rounded-lg hover:bg-secondary transition-colors"
+                className="inline-flex items-center justify-center p-3 border border-border rounded-lg hover:bg-card transition-colors"
                 aria-label="GitHub"
               >
                 <Github size={20} />
@@ -51,22 +60,30 @@ const HeroSection = () => {
                 href={LINKEDIN}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center p-3 border border-border rounded-lg hover:bg-secondary transition-colors"
+                className="inline-flex items-center justify-center p-3 border border-border rounded-lg hover:bg-card transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
               </a>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Image */}
-          <div className="md:col-span-5 flex justify-center md:justify-end">
-            <img
-              src={profileImg}
-              alt="Deepak B T — AI/ML & Full Stack Developer"
-              className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-500 border border-border shadow-sm"
-            />
-          </div>
+          {/* Image with soft glow */}
+          <motion.div
+            className="md:col-span-5 flex justify-center md:justify-end"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <div className="relative">
+              <div className="absolute -inset-4 bg-accent/10 rounded-3xl blur-2xl" />
+              <img
+                src={profileImg}
+                alt="Deepak B T — AI/ML & Full Stack Developer"
+                className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-500 border border-border"
+              />
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

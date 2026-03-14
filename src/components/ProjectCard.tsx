@@ -10,7 +10,7 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
   return (
     <motion.button
       onClick={onClick}
-      className="group relative block w-full overflow-hidden rounded-xl border border-border bg-card text-left shadow-sm focus:outline-none focus:ring-2 focus:ring-accent"
+      className="group relative block w-full overflow-hidden rounded-xl border border-border bg-card text-left focus:outline-none focus:ring-2 focus:ring-accent transition-shadow hover:shadow-lg hover:shadow-accent/5"
       whileHover={{ scale: 1.02 }}
       transition={{ type: "spring", duration: 0.4, bounce: 0 }}
     >

@@ -21,7 +21,7 @@ const ToolsSection = () => {
           {tools.map((tool) => (
             <span
               key={tool}
-              className="px-4 py-2 text-sm font-mono text-foreground bg-card border border-border rounded-lg"
+              className="px-4 py-2 text-sm font-mono text-foreground bg-card border border-border rounded-lg hover:border-accent/40 transition-colors"
             >
               {tool}
             </span>
