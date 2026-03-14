@@ -2,16 +2,21 @@ import { useState } from "react";
 import { projects, categories, type Project } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
 import ProjectExpanded from "./ProjectExpanded";
+import SectionGlow from "./SectionGlow";
 
 const ProjectsSection = () => {
   const [selected, setSelected] = useState<Project | null>(null);
 
   return (
-    <section id="projects">
-      <div className="container max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-medium tracking-display text-foreground mb-16">
-          Projects
-        </h2>
+    <section id="projects" className="relative overflow-hidden">
+      <SectionGlow
+        glows={[
+          { x: "80%", y: "70%", color: "indigo", size: "22rem", animation: "float-slow" },
+          { x: "5%", y: "30%", color: "green", size: "18rem", animation: "float-slow-reverse" },
+        ]}
+      />
+      <div className="container max-w-6xl mx-auto px-6 py-24 relative z-10">
+        <h2 className="text-3xl font-medium tracking-display text-foreground mb-16">Projects</h2>
 
         {categories.map((cat) => {
           const items = projects.filter((p) => p.category === cat.key);
@@ -25,11 +30,7 @@ const ProjectsSection = () => {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {items.map((project) => (
-                  <ProjectCard
-                    key={project.id}
-                    project={project}
-                    onClick={() => setSelected(project)}
-                  />
+                  <ProjectCard key={project.id} project={project} onClick={() => setSelected(project)} />
                 ))}
               </div>
             </div>
