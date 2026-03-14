@@ -1,5 +1,11 @@
 import { useEffect, useRef } from "react";
 
+const COLORS = [
+  "rgba(99,102,241,", // indigo
+  "rgba(56,189,248,", // cyan
+  "rgba(34,197,94,",  // green
+];
+
 const AnimatedGridLines = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -9,11 +15,12 @@ const AnimatedGridLines = () => {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
+    let dpr = window.devicePixelRatio || 1;
+
     const resize = () => {
-      const dpr = window.devicePixelRatio || 1;
+      dpr = window.devicePixelRatio || 1;
       canvas.width = canvas.offsetWidth * dpr;
       canvas.height = canvas.offsetHeight * dpr;
-      ctx.scale(dpr, dpr);
     };
     resize();
     window.addEventListener("resize", resize);
@@ -26,6 +33,7 @@ const AnimatedGridLines = () => {
       length: number;
       opacity: number;
       horizontal: boolean;
+      color: string;
     }
 
     const lines: Line[] = [];
@@ -34,37 +42,40 @@ const AnimatedGridLines = () => {
 
     const spawnLine = () => {
       const horizontal = Math.random() > 0.5;
+      const color = COLORS[Math.floor(Math.random() * COLORS.length)];
+      const opacity = 0.04 + Math.random() * 0.05;
+
       if (horizontal) {
         lines.push({
-          x: -100,
+          x: -120,
           y: Math.random() * h(),
-          dx: 0.3 + Math.random() * 0.4,
+          dx: 0.2 + Math.random() * 0.3,
           dy: 0,
-          length: 80 + Math.random() * 120,
-          opacity: 0.04 + Math.random() * 0.06,
+          length: 100 + Math.random() * 160,
+          opacity,
           horizontal: true,
+          color,
         });
       } else {
         lines.push({
           x: Math.random() * w(),
-          y: -100,
+          y: -120,
           dx: 0,
-          dy: 0.3 + Math.random() * 0.4,
-          length: 80 + Math.random() * 120,
-          opacity: 0.04 + Math.random() * 0.06,
+          dy: 0.2 + Math.random() * 0.3,
+          length: 100 + Math.random() * 160,
+          opacity,
           horizontal: false,
+          color,
         });
       }
     };
 
-    // Seed initial lines
-    for (let i = 0; i < 6; i++) spawnLine();
+    for (let i = 0; i < 8; i++) spawnLine();
 
     let animId: number;
     let frame = 0;
 
     const draw = () => {
-      const dpr = window.devicePixelRatio || 1;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.clearRect(0, 0, w(), h());
 
@@ -73,8 +84,17 @@ const AnimatedGridLines = () => {
         l.x += l.dx;
         l.y += l.dy;
 
+        const grad = l.horizontal
+          ? ctx.createLinearGradient(l.x, l.y, l.x + l.length, l.y)
+          : ctx.createLinearGradient(l.x, l.y, l.x, l.y + l.length);
+
+        grad.addColorStop(0, `${l.color}0)`);
+        grad.addColorStop(0.3, `${l.color}${l.opacity})`);
+        grad.addColorStop(0.7, `${l.color}${l.opacity})`);
+        grad.addColorStop(1, `${l.color}0)`);
+
         ctx.beginPath();
-        ctx.strokeStyle = `rgba(99,102,241,${l.opacity})`;
+        ctx.strokeStyle = grad;
         ctx.lineWidth = 0.5;
         if (l.horizontal) {
           ctx.moveTo(l.x, l.y);
@@ -91,7 +111,7 @@ const AnimatedGridLines = () => {
       }
 
       frame++;
-      if (frame % 120 === 0 && lines.length < 12) {
+      if (frame % 90 === 0 && lines.length < 14) {
         spawnLine();
       }
 
@@ -109,6 +129,7 @@ const AnimatedGridLines = () => {
     <canvas
       ref={canvasRef}
       className="absolute inset-0 w-full h-full pointer-events-none"
+      style={{ zIndex: 1 }}
       aria-hidden="true"
     />
   );
