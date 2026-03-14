@@ -126,19 +126,6 @@ https://www.linkedin.com/in/deepak1970/
 
 If you like this project, consider giving it a ⭐ on GitHub.
 
-
----
-
-✅ You can **copy-paste this directly into your `README.md`**.
-
----
-
-💡 **One thing that will make it look even more modern (like top GitHub repos):**
-
-Add this **tech icon banner under the title**:
-
-```markdown
 <p align="center">
 <img src="https://skillicons.dev/icons?i=react,nodejs,tailwind,js,python,git,github,vscode" />
 </p>
-```
