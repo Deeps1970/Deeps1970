@@ -10,7 +10,7 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
   return (
     <motion.button
       onClick={onClick}
-      className="group relative block w-full overflow-hidden rounded-lg border border-border bg-card text-left focus:outline-none focus:ring-2 focus:ring-accent"
+      className="group relative block w-full overflow-hidden rounded-xl border border-border bg-card text-left shadow-sm focus:outline-none focus:ring-2 focus:ring-accent"
       whileHover={{ scale: 1.02 }}
       transition={{ type: "spring", duration: 0.4, bounce: 0 }}
     >
@@ -22,8 +22,7 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
           loading="lazy"
         />
       </div>
-      {/* Title overlay bottom-right */}
-      <div className="absolute bottom-0 right-0 bg-background/90 backdrop-blur-sm border-t border-l border-border px-4 py-2 rounded-tl-lg">
+      <div className="absolute bottom-0 right-0 bg-card/90 backdrop-blur-sm border-t border-l border-border px-4 py-2 rounded-tl-lg">
         <span className="text-sm font-medium text-foreground">{project.title}</span>
       </div>
     </motion.button>

@@ -1,11 +1,24 @@
 const skillGroups = [
   {
     title: "Frontend",
-    skills: ["HTML5", "CSS3", "Tailwind CSS", "JavaScript"],
+    skills: ["HTML5", "CSS3", "Tailwind CSS", "JavaScript", "React"],
   },
   {
     title: "Backend & Database",
-    skills: ["PHP", "MySQL", "Oracle DB", "phpMyAdmin"],
+    skills: ["PHP", "MySQL", "Oracle DB", "Supabase", "phpMyAdmin"],
+  },
+  {
+    title: "AI / Machine Learning",
+    skills: [
+      "Python",
+      "Machine Learning",
+      "Data Analysis",
+      "NumPy",
+      "Pandas",
+      "Scikit-learn",
+      "TensorFlow (basic)",
+      "OpenAI API / LLM",
+    ],
   },
   {
     title: "Computer Science",
@@ -24,7 +37,7 @@ const SkillsSection = () => {
         <h2 className="text-3xl font-medium tracking-display text-foreground mb-12">
           Skills
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillGroups.map((group) => (
             <div key={group.title}>
               <h3 className="text-sm font-mono text-muted-foreground mb-4 uppercase tracking-wider">
@@ -34,7 +47,7 @@ const SkillsSection = () => {
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1.5 text-sm font-mono text-foreground bg-secondary border border-border rounded-md"
+                    className="px-3 py-1.5 text-sm font-mono text-foreground bg-card border border-border rounded-md shadow-sm"
                   >
                     {skill}
                   </span>
