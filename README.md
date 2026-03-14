@@ -54,7 +54,7 @@ It is designed with a **modern UI, smooth animations, and structured project sho
 
 ---
 
-# 🧠 Tech Stack
+# 🧠 Skills
 
 | Category | Technologies |
 |--------|-------------|
@@ -141,3 +141,4 @@ Add this **tech icon banner under the title**:
 <p align="center">
 <img src="https://skillicons.dev/icons?i=react,nodejs,tailwind,js,python,git,github,vscode" />
 </p>
+```
