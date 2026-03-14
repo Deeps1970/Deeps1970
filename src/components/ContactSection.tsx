@@ -12,8 +12,8 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact">
-      <div className="container max-w-6xl mx-auto px-6 py-24">
+    <section id="contact" className="min-h-screen flex items-center pt-16">
+      <div className="container max-w-6xl mx-auto px-6 py-12 w-full">
         <h2 className="text-3xl font-medium tracking-display text-foreground mb-8">
           Contact
         </h2>

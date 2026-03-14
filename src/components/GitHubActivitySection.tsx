@@ -2,8 +2,8 @@ const GitHubActivitySection = () => {
   const username = "Deeps1970";
 
   return (
-    <section id="github-activity" className="bg-muted">
-      <div className="container max-w-6xl mx-auto px-6 py-24">
+    <section id="github-activity" className="bg-muted min-h-screen flex items-center pt-16">
+      <div className="container max-w-6xl mx-auto px-6 py-12 w-full">
         <h2 className="text-3xl font-medium tracking-display text-foreground mb-12">
           GitHub Activity
         </h2>
