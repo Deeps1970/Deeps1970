@@ -1,73 +1,145 @@
-# Welcome to your Lovable project
+# 🧑‍💻 Deepak B T — Developer Portfolio
 
-## Project info
+### AI/ML & Full Stack Developer
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+<p align="center">
+A modern portfolio website showcasing my work in <b>AI/ML, Full Stack Development, and Frontend Engineering</b>.
+</p>
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+<p align="center">
 
-**Use Lovable**
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-Styling-38BDF8?logo=tailwindcss)
+![JavaScript](https://img.shields.io/badge/JavaScript-Logic-F7DF1E?logo=javascript)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js)
+![Supabase](https://img.shields.io/badge/Supabase-Database-3ECF8E?logo=supabase)
+![Vercel](https://img.shields.io/badge/Vercel-Deployment-black?logo=vercel)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+</p>
 
-Changes made via Lovable will be committed automatically to this repo.
+<p align="center">
 
-**Use your preferred IDE**
+![status](https://img.shields.io/badge/status-active-success)
+![license](https://img.shields.io/badge/license-MIT-blue)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+</p>
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🌐 Live Portfolio
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🔗 **Website**  
+https://portfolio-deeps1970.vercel.app/
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+# ✨ Overview
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+This portfolio highlights my development journey and projects across **Frontend, Full Stack, and AI-powered applications**.
+
+It is designed with a **modern UI, smooth animations, and structured project showcase** to demonstrate both technical skills and real-world development experience.
+
+---
+
+# 🚀 Features
+
+| Feature | Description |
+|-------|-------------|
+| Modern UI | Dark themed portfolio with gradient accents |
+| Responsive Design | Works seamlessly across desktop, tablet, and mobile |
+| Project Showcase | Interactive project gallery with expandable details |
+| GitHub Analytics | Displays GitHub contribution heatmap and stats |
+| Categorized Projects | Frontend and Full Stack projects organized clearly |
+| Contact Integration | Direct contact via email form |
+
+---
+
+# 🧠 Tech Stack
+
+| Category | Technologies |
+|--------|-------------|
+| Frontend | React, HTML5, CSS3, JavaScript, Tailwind CSS |
+| Backend | Node.js, Express |
+| AI / ML | Python, Machine Learning APIs |
+| Database | MySQL, Supabase, Oracle DB |
+| Tools | Git, GitHub, VS Code, XAMPP |
+| Deployment | Vercel |
+
+---
+
+# 📂 Portfolio Sections
+
+| Section | Description |
+|-------|-------------|
+| Home | Developer introduction and overview |
+| About | Education, focus areas, and background |
+| Selected Work | Highlighted flagship project |
+| Projects | Frontend and Full Stack projects |
+| Experience | Internship experience |
+| Skills | Technical skills and technologies |
+| Certifications | Professional courses and certifications |
+| GitHub Activity | Contribution heatmap and statistics |
+| Contact | Email contact form |
+
+---
+
+# 🤖 Featured Project
+
+## AI Life Copilot
+
+AI-powered lifestyle analytics platform that tracks daily habits and provides **personalized insights for health, productivity, and sustainability**.
+
+### Key Features
+
+| Feature | Description |
+|-------|-------------|
+| Smart Scoring Engine | Generates health, productivity, and sustainability scores |
+| AI Chat Coach | Personalized AI assistant powered by LLMs |
+| Habit Tracking | Tracks daily lifestyle inputs |
+| Analytics Dashboard | Visual insights for progress tracking |
+
+🔗 GitHub  
+https://github.com/joshuahanielgts/Ai-life-copilot-HF26
+
+---
+
+# ⚙️ Running Locally
+
+Clone the repository
+
+```bash
+1.git clone https://github.com/YOUR_USERNAME/portfolio.git
+2.Navigate to the project directory : cd portfolio
+3.Install dependencies : npm install
+4.Run development server : npm run dev
 ```
 
-**Edit a file directly in GitHub**
+📬 Contact
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+📧 Email
+thiagarajandeepu2007@gmail.com
 
-**Use GitHub Codespaces**
+🔗 LinkedIn
+https://www.linkedin.com/in/deepak1970/
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+⭐ Support
 
-## What technologies are used for this project?
+If you like this project, consider giving it a ⭐ on GitHub.
 
-This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+✅ You can **copy-paste this directly into your `README.md`**.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+💡 **One thing that will make it look even more modern (like top GitHub repos):**
 
-Yes, you can!
+Add this **tech icon banner under the title**:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```markdown
+<p align="center">
+<img src="https://skillicons.dev/icons?i=react,nodejs,tailwind,js,python,git,github,vscode" />
+</p>
