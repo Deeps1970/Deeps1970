@@ -19,8 +19,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-card">
       <div className="container max-w-6xl mx-auto flex items-center justify-between h-16 px-6">
-        <a href="#home" className="text-lg font-semibold tracking-display text-accent hover:text-white transition-colors">
-          Deepak<span className="text-accent hover:text-white">.</span>
+        <a href="#home" className="text-lg font-semibold tracking-display text-foreground">
+          Deepak<span className="text-accent">.</span>
         </a>
 
         {/* Desktop */}
