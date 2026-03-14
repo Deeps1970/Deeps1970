@@ -13,8 +13,6 @@ A modern portfolio website showcasing my work in <b>AI/ML, Full Stack Developmen
 ![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react)
 ![Tailwind](https://img.shields.io/badge/TailwindCSS-Styling-38BDF8?logo=tailwindcss)
 ![JavaScript](https://img.shields.io/badge/JavaScript-Logic-F7DF1E?logo=javascript)
-![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js)
-![Supabase](https://img.shields.io/badge/Supabase-Database-3ECF8E?logo=supabase)
 ![Vercel](https://img.shields.io/badge/Vercel-Deployment-black?logo=vercel)
 
 </p>
