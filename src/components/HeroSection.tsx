@@ -129,7 +129,7 @@ const HeroSection = () => {
               <img
                 src={profileImg}
                 alt="Deepak B T — AI/ML & Full Stack Developer"
-                className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-500 border border-border"
+                className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl transition-all duration-500 border border-border"
               />
             </div>
           </motion.div>
