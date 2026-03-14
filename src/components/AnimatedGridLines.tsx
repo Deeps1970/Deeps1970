@@ -1,7 +1,7 @@
 const AnimatedGridLines = () => {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ zIndex: 1 }} aria-hidden="true">
-      {/* Horizontal moving lines */}
+      {/* Horizontal lines - layer 1 */}
       <div
         className="absolute inset-0"
         style={{
@@ -9,16 +9,19 @@ const AnimatedGridLines = () => {
             repeating-linear-gradient(
               0deg,
               transparent,
-              transparent 79px,
-              rgba(99,102,241,0.07) 80px,
-              transparent 81px
+              transparent 78px,
+              rgba(99,102,241,0.14) 79px,
+              rgba(99,102,241,0.06) 80px,
+              rgba(99,102,241,0.14) 81px,
+              transparent 82px
             )
           `,
           backgroundSize: "100% 80px",
-          animation: "gridSlideDown 30s linear infinite",
+          animation: "gridSlideDown 25s linear infinite",
+          filter: "blur(0.3px)",
         }}
       />
-      {/* Vertical moving lines */}
+      {/* Vertical lines - layer 2 */}
       <div
         className="absolute inset-0"
         style={{
@@ -26,30 +29,27 @@ const AnimatedGridLines = () => {
             repeating-linear-gradient(
               90deg,
               transparent,
-              transparent 119px,
-              rgba(56,189,248,0.05) 120px,
-              transparent 121px
+              transparent 118px,
+              rgba(34,211,238,0.12) 119px,
+              rgba(34,211,238,0.05) 120px,
+              rgba(34,211,238,0.12) 121px,
+              transparent 122px
             )
           `,
           backgroundSize: "120px 100%",
-          animation: "gridSlideRight 35s linear infinite",
+          animation: "gridSlideRight 30s linear infinite",
+          filter: "blur(0.3px)",
         }}
       />
-      {/* Diagonal accent lines */}
+      {/* Intersection glow layer */}
       <div
         className="absolute inset-0"
         style={{
           backgroundImage: `
-            repeating-linear-gradient(
-              45deg,
-              transparent,
-              transparent 199px,
-              rgba(34,197,94,0.04) 200px,
-              transparent 201px
-            )
+            radial-gradient(circle 2px at 0px 0px, rgba(34,197,94,0.15), transparent 4px)
           `,
-          backgroundSize: "200px 200px",
-          animation: "gridSlideDiag 40s linear infinite",
+          backgroundSize: "120px 80px",
+          animation: "gridSlideDown 25s linear infinite, gridSlideRight 30s linear infinite",
         }}
       />
     </div>
