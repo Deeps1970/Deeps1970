@@ -1,10 +1,16 @@
+import SectionGlow from "./SectionGlow";
+
 const AboutSection = () => {
   return (
-    <section id="about" className="bg-muted">
-      <div className="container max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-medium tracking-display text-foreground mb-8">
-          About
-        </h2>
+    <section id="about" className="relative overflow-hidden">
+      <SectionGlow
+        glows={[
+          { x: "5%", y: "10%", color: "indigo", size: "20rem", animation: "float-slow" },
+          { x: "70%", y: "60%", color: "green", size: "16rem", animation: "float-slow-reverse" },
+        ]}
+      />
+      <div className="container max-w-6xl mx-auto px-6 py-24 relative z-10">
+        <h2 className="text-3xl font-medium tracking-display text-foreground mb-8">About</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <p className="text-muted-foreground leading-relaxed mb-4">
@@ -30,9 +36,7 @@ const AboutSection = () => {
               { label: "Email", value: "thiagarajandeepu2007@gmail.com" },
             ].map((item) => (
               <div key={item.label} className="flex gap-4 border-b border-border pb-4 last:border-0">
-                <span className="text-sm font-mono text-muted-foreground w-24 shrink-0">
-                  {item.label}
-                </span>
+                <span className="text-sm font-mono text-muted-foreground w-24 shrink-0">{item.label}</span>
                 <span className="text-sm text-foreground">{item.value}</span>
               </div>
             ))}

@@ -1,6 +1,8 @@
 import { Github, Linkedin, ArrowDown, MapPin } from "lucide-react";
 import profileImg from "@/assets/profile.jpeg";
 import { motion } from "framer-motion";
+import SectionGlow from "./SectionGlow";
+import WireframeSphere from "./WireframeSphere";
 
 const LINKEDIN = "https://www.linkedin.com/in/deepak1970/";
 
@@ -10,23 +12,26 @@ const HeroSection = () => {
       {/* Layered radial gradients */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(99,102,241,0.15),transparent_40%),radial-gradient(circle_at_80%_70%,rgba(34,197,94,0.1),transparent_40%)]" />
 
-      {/* Floating blurred blobs */}
-      <div className="absolute top-1/4 left-[10%] w-72 h-72 rounded-full bg-accent/[0.07] blur-3xl animate-float-slow pointer-events-none" />
-      <div className="absolute bottom-1/4 right-[8%] w-96 h-96 rounded-full bg-[hsl(142_71%_45%/0.06)] blur-3xl animate-float-slow-reverse pointer-events-none" />
-      <div className="absolute top-[60%] left-[50%] w-48 h-48 rounded-full bg-accent/[0.05] blur-2xl animate-float-slow-reverse pointer-events-none" />
+      <SectionGlow
+        glows={[
+          { x: "10%", y: "25%", color: "indigo", size: "22rem", animation: "float-slow" },
+          { x: "60%", y: "60%", color: "green", size: "28rem", animation: "float-slow-reverse" },
+          { x: "45%", y: "20%", color: "indigo", size: "14rem", animation: "float-slow-reverse" },
+        ]}
+      />
+
+      {/* Wireframe sphere */}
+      <WireframeSphere />
 
       <div className="container max-w-6xl mx-auto px-6 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-          {/* Text */}
           <motion.div
             className="md:col-span-7"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-sm font-mono text-muted-foreground mb-4">
-              Hi, I'm
-            </p>
+            <p className="text-sm font-mono text-muted-foreground mb-4">Hi, I'm</p>
             <h1 className="text-4xl md:text-5xl font-medium tracking-display text-foreground mb-3 leading-tight">
               Deepak B T
             </h1>
@@ -73,7 +78,6 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* Image with gradient halo */}
           <motion.div
             className="md:col-span-5 flex justify-center md:justify-end"
             initial={{ opacity: 0, scale: 0.95 }}
