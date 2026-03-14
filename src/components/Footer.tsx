@@ -1,5 +1,7 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 
+const LINKEDIN = "https://www.linkedin.com/in/deepak1970/";
+
 const Footer = () => {
   return (
     <footer className="border-t border-border">
@@ -18,7 +20,7 @@ const Footer = () => {
             <Github size={18} />
           </a>
           <a
-            href="https://linkedin.com/in/thiagarajan-deepak"
+            href={LINKEDIN}
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"

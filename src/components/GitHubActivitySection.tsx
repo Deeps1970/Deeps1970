@@ -2,7 +2,7 @@ const GitHubActivitySection = () => {
   const username = "Deeps1970";
 
   return (
-    <section id="github-activity" className="bg-secondary">
+    <section id="github-activity" className="bg-muted">
       <div className="container max-w-6xl mx-auto px-6 py-24">
         <h2 className="text-3xl font-medium tracking-display text-foreground mb-12">
           GitHub Activity

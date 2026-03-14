@@ -11,7 +11,7 @@ const tools = [
 
 const ToolsSection = () => {
   return (
-    <section className="bg-secondary">
+    <section className="bg-muted">
       <div className="container max-w-6xl mx-auto px-6 py-24">
         <h2 className="text-3xl font-medium tracking-display text-foreground mb-12 flex items-center gap-3">
           <Wrench size={24} className="text-accent" />

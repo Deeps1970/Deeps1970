@@ -17,7 +17,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-sm">
       <div className="container max-w-6xl mx-auto flex items-center justify-between h-16 px-6">
         <a href="#home" className="text-lg font-semibold tracking-display text-foreground">
           Deepak<span className="text-accent">.</span>

@@ -1,6 +1,8 @@
 import { Github, Linkedin, ArrowDown, MapPin } from "lucide-react";
 import profileImg from "@/assets/profile.jpeg";
 
+const LINKEDIN = "https://www.linkedin.com/in/deepak1970/";
+
 const HeroSection = () => {
   return (
     <section id="home" className="pt-16">
@@ -44,7 +46,7 @@ const HeroSection = () => {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com/in/thiagarajan-deepak"
+                href={LINKEDIN}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center p-3 border border-border rounded-lg hover:bg-secondary transition-colors"
@@ -60,7 +62,7 @@ const HeroSection = () => {
             <img
               src={profileImg}
               alt="Deepak B T — AI/ML & Full Stack Developer"
-              className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-500 border border-border"
+              className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-500 border border-border shadow-sm"
             />
           </div>
         </div>
