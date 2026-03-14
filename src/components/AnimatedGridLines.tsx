@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 
 const COLORS = [
-  "rgba(99,102,241,", // indigo
-  "rgba(56,189,248,", // cyan
-  "rgba(34,197,94,",  // green
+  "rgba(99,102,241,",  // indigo
+  "rgba(56,189,248,",  // cyan
+  "rgba(34,197,94,",   // green
 ];
 
 const AnimatedGridLines = () => {
@@ -41,17 +41,17 @@ const AnimatedGridLines = () => {
     const h = () => canvas.offsetHeight;
 
     const spawnLine = () => {
-      const horizontal = Math.random() > 0.5;
+      const horizontal = Math.random() > 0.45;
       const color = COLORS[Math.floor(Math.random() * COLORS.length)];
-      const opacity = 0.04 + Math.random() * 0.05;
+      const opacity = 0.06 + Math.random() * 0.06;
 
       if (horizontal) {
         lines.push({
-          x: -120,
+          x: -150,
           y: Math.random() * h(),
-          dx: 0.2 + Math.random() * 0.3,
+          dx: 0.15 + Math.random() * 0.25,
           dy: 0,
-          length: 100 + Math.random() * 160,
+          length: 120 + Math.random() * 200,
           opacity,
           horizontal: true,
           color,
@@ -59,10 +59,10 @@ const AnimatedGridLines = () => {
       } else {
         lines.push({
           x: Math.random() * w(),
-          y: -120,
+          y: -150,
           dx: 0,
-          dy: 0.2 + Math.random() * 0.3,
-          length: 100 + Math.random() * 160,
+          dy: 0.15 + Math.random() * 0.25,
+          length: 120 + Math.random() * 200,
           opacity,
           horizontal: false,
           color,
@@ -70,7 +70,7 @@ const AnimatedGridLines = () => {
       }
     };
 
-    for (let i = 0; i < 8; i++) spawnLine();
+    for (let i = 0; i < 12; i++) spawnLine();
 
     let animId: number;
     let frame = 0;
@@ -79,6 +79,7 @@ const AnimatedGridLines = () => {
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.clearRect(0, 0, w(), h());
 
+      // Draw lines
       for (let i = lines.length - 1; i >= 0; i--) {
         const l = lines[i];
         l.x += l.dx;
@@ -89,13 +90,13 @@ const AnimatedGridLines = () => {
           : ctx.createLinearGradient(l.x, l.y, l.x, l.y + l.length);
 
         grad.addColorStop(0, `${l.color}0)`);
-        grad.addColorStop(0.3, `${l.color}${l.opacity})`);
-        grad.addColorStop(0.7, `${l.color}${l.opacity})`);
+        grad.addColorStop(0.2, `${l.color}${l.opacity})`);
+        grad.addColorStop(0.8, `${l.color}${l.opacity})`);
         grad.addColorStop(1, `${l.color}0)`);
 
         ctx.beginPath();
         ctx.strokeStyle = grad;
-        ctx.lineWidth = 0.5;
+        ctx.lineWidth = 0.7;
         if (l.horizontal) {
           ctx.moveTo(l.x, l.y);
           ctx.lineTo(l.x + l.length, l.y);
@@ -110,8 +111,35 @@ const AnimatedGridLines = () => {
         }
       }
 
+      // Draw intersection glows where horizontal and vertical lines cross
+      for (let a = 0; a < lines.length; a++) {
+        for (let b = a + 1; b < lines.length; b++) {
+          const la = lines[a];
+          const lb = lines[b];
+          if (la.horizontal === lb.horizontal) continue;
+
+          const hz = la.horizontal ? la : lb;
+          const vt = la.horizontal ? lb : la;
+
+          const ix = vt.x;
+          const iy = hz.y;
+
+          if (
+            ix >= hz.x && ix <= hz.x + hz.length &&
+            iy >= vt.y && iy <= vt.y + vt.length
+          ) {
+            const glow = ctx.createRadialGradient(ix, iy, 0, ix, iy, 6);
+            const o = Math.min(hz.opacity, vt.opacity) * 1.5;
+            glow.addColorStop(0, `${hz.color}${o})`);
+            glow.addColorStop(1, `${hz.color}0)`);
+            ctx.fillStyle = glow;
+            ctx.fillRect(ix - 6, iy - 6, 12, 12);
+          }
+        }
+      }
+
       frame++;
-      if (frame % 90 === 0 && lines.length < 14) {
+      if (frame % 60 === 0 && lines.length < 18) {
         spawnLine();
       }
 
