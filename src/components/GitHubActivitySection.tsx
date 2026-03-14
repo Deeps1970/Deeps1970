@@ -15,7 +15,7 @@ const GitHubActivitySection = () => {
         <h2 className="text-3xl font-medium tracking-display text-foreground mb-12">GitHub Activity</h2>
         <div className="space-y-6">
           <div className="border border-border rounded-xl p-4 bg-card overflow-x-auto">
-            <img src={`https://ghchart.rshah.org/6366f1/${username}`} alt="GitHub Contribution Heatmap" className="w-full max-w-3xl mx-auto" loading="lazy" />
+            <img src={`https://ghchart.rshah.org/${username}`} alt="GitHub Contribution Heatmap" className="w-full max-w-3xl mx-auto" loading="lazy" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="border border-border rounded-xl p-4 bg-card overflow-hidden">
