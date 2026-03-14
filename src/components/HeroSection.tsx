@@ -3,10 +3,16 @@ import profileImg from "@/assets/profile.jpeg";
 import { motion } from "framer-motion";
 import SectionGlow from "./SectionGlow";
 import WireframeSphere from "./WireframeSphere";
+import AnimatedGridLines from "./AnimatedGridLines";
+import TypewriterText from "./TypewriterText";
+import { useState } from "react";
 
 const LINKEDIN = "https://www.linkedin.com/in/deepak1970/";
 
 const HeroSection = () => {
+  const [line1Done, setLine1Done] = useState(false);
+  const [line2Done, setLine2Done] = useState(false);
+
   return (
     <section id="home" className="pt-16 min-h-screen flex items-center relative overflow-hidden">
       {/* Layered radial gradients */}
@@ -20,6 +26,9 @@ const HeroSection = () => {
         ]}
       />
 
+      {/* Animated grid lines */}
+      <AnimatedGridLines />
+
       {/* Wireframe sphere */}
       <WireframeSphere />
 
@@ -31,13 +40,48 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-sm font-mono text-muted-foreground mb-4">Hi, I'm</p>
-            <h1 className="text-4xl md:text-5xl font-medium tracking-display text-foreground mb-3 leading-tight">
-              Deepak B T
-            </h1>
-            <p className="text-xl md:text-2xl text-accent font-medium mb-3">
-              AI/ML &amp; Full Stack Developer
-            </p>
+            <div className="mb-4">
+              <TypewriterText
+                text="Hi, I'm"
+                className="text-sm font-mono text-muted-foreground"
+                as="p"
+                speed={60}
+                showCursor
+                onDone={() => setLine1Done(true)}
+              />
+            </div>
+            <div className="mb-3">
+              {line1Done && (
+                <TypewriterText
+                  text="Deepak B T"
+                  className="text-4xl md:text-5xl font-medium tracking-display text-foreground leading-tight"
+                  as="h1"
+                  speed={70}
+                  showCursor
+                  onDone={() => setLine2Done(true)}
+                />
+              )}
+              {!line1Done && (
+                <h1 className="text-4xl md:text-5xl font-medium tracking-display text-foreground leading-tight opacity-0">
+                  Deepak B T
+                </h1>
+              )}
+            </div>
+            <div className="mb-3">
+              {line2Done ? (
+                <TypewriterText
+                  text="AI/ML & Full Stack Developer"
+                  className="text-xl md:text-2xl text-accent font-medium"
+                  as="p"
+                  speed={40}
+                  showCursor
+                />
+              ) : (
+                <p className="text-xl md:text-2xl text-accent font-medium opacity-0">
+                  AI/ML &amp; Full Stack Developer
+                </p>
+              )}
+            </div>
             <p className="inline-flex items-center gap-1.5 text-sm text-muted-foreground mb-6">
               <MapPin size={14} />
               Chennai, Tamil Nadu, India
