@@ -2,7 +2,6 @@ import { Github, Linkedin, ArrowDown, MapPin } from "lucide-react";
 import profileImg from "@/assets/profile.jpeg";
 import { motion } from "framer-motion";
 import SectionGlow from "./SectionGlow";
-import WireframeSphere from "./WireframeSphere";
 import AnimatedGridLines from "./AnimatedGridLines";
 import TypewriterText from "./TypewriterText";
 import { useState } from "react";
@@ -26,11 +25,8 @@ const HeroSection = () => {
         ]}
       />
 
-      {/* Animated grid lines */}
+      {/* Animated grid lines — behind glow */}
       <AnimatedGridLines />
-
-      {/* Wireframe sphere */}
-      <WireframeSphere />
 
       <div className="container max-w-6xl mx-auto px-6 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
