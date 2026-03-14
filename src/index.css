@@ -7,34 +7,35 @@
 @layer base {
   :root {
     --background: 222 47% 11%;
-    --foreground: 210 40% 96%;
-    --card: 217 33% 17%;
-    --card-foreground: 210 40% 96%;
-    --popover: 217 33% 17%;
-    --popover-foreground: 210 40% 96%;
-    --primary: 217 91% 60%;
+    --foreground: 210 40% 98%;
+    --card: 215 28% 17%;
+    --card-foreground: 210 40% 98%;
+    --popover: 215 28% 17%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 239 84% 67%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 96%;
-    --muted: 222 47% 14%;
+    --secondary: 222 47% 14%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 220 40% 13%;
     --muted-foreground: 215 20% 65%;
-    --accent: 217 91% 60%;
+    --accent: 239 84% 67%;
     --accent-foreground: 0 0% 100%;
+    --accent-green: 142 71% 45%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     --border: 215 25% 27%;
     --input: 215 25% 27%;
-    --ring: 217 91% 60%;
+    --ring: 239 84% 67%;
     --radius: 0.75rem;
 
     --sidebar-background: 222 47% 11%;
-    --sidebar-foreground: 210 40% 96%;
-    --sidebar-primary: 217 91% 60%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 239 84% 67%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 217 33% 17%;
-    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-accent: 215 28% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
     --sidebar-border: 215 25% 27%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-ring: 239 84% 67%;
   }
 }
 
@@ -51,4 +52,24 @@
   section {
     scroll-margin-top: 4.5rem;
   }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(15px, -20px) scale(1.05); }
+  66% { transform: translate(-10px, 10px) scale(0.97); }
+}
+
+@keyframes float-slow-reverse {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-20px, 15px) scale(0.95); }
+  66% { transform: translate(10px, -10px) scale(1.03); }
+}
+
+.animate-float-slow {
+  animation: float-slow 20s ease-in-out infinite;
+}
+
+.animate-float-slow-reverse {
+  animation: float-slow-reverse 25s ease-in-out infinite;
 }
