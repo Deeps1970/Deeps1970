@@ -5,8 +5,8 @@ const LINKEDIN = "https://www.linkedin.com/in/deepak1970/";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="pt-16">
-      <div className="container max-w-6xl mx-auto px-6 py-24 md:py-32">
+    <section id="home" className="pt-16 min-h-screen flex items-center">
+      <div className="container max-w-6xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           {/* Text */}
           <div className="md:col-span-7">
