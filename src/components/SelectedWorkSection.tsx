@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
 import { Github, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import copilotImg from "@/assets/projects/copilot.png";
+import electiveNavigator from "@/assets/projects/electiveNavigator.png";
 import SectionGlow from "./SectionGlow";
 
 interface FeaturedProject {
@@ -16,14 +17,22 @@ interface FeaturedProject {
 const featuredProjects: FeaturedProject[] = [
   {
     title: "AI Life Copilot",
-    description:
-      "An AI-powered lifestyle intelligence platform that helps users manage health, productivity, and habits with intelligent insights and a conversational assistant.",
+    description: "An AI-powered lifestyle intelligence platform that helps users manage health, productivity, and habits with intelligent insights and a conversational assistant.",
     image: copilotImg,
     features: ["AI chatbot assistant", "Lifestyle tracking", "Productivity insights", "Analytics dashboard"],
     tech: ["Python", "React", "OpenAI API", "LangChain"],
     live: "https://ai-life-copilot-hf.vercel.app/",
     github: "https://github.com/joshuahanielgts/Ai-life-copilot-HF26",
   },
+  {
+    title: "Smart Elective Selection",
+    description: "An university level elective selection & management system for administration documentation and student elective enrollment system to reduce manual entry and retrieval of elective data",
+    image: electiveNavigator,
+    features: ["Admin Analytics Dashboard", "Data Management", "Electice Management", "Student Panel"],
+    tech: ["React.js", "PostgreSQL", "TypeScript"],
+    github: "https://github.com/Deeps1970/elective-navigator",
+    live: "https://elective-navigator.vercel.app",
+  }
 ];
 
 const SelectedWorkSection = () => {
