@@ -17,7 +17,7 @@
     <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Gmail"/>
   </a>
   <a href="https://portfolio-deeps1970.vercel.app/">
-    <img src=" https://img.shields.io/badge/%27Kindly,%20Visit%20my%27%20Portfolio-20B2AA?style=Kindly,-Visit-my" alt="Portfolio"/>
+    <img src="https://img.shields.io/badge/Portfolio-Visit%20My%20Site-20B2AA?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio"/>
   </a>
 </p>
 
@@ -123,7 +123,7 @@ print(me.motto())
 ## 🏆 Trophy Wall
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=deeps1970&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7&margin-w=4" alt="Trophies"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=deeps1970&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6&margin-w=4&margin-h=4" alt="Trophies"/>
 </div>
 
 ---
