@@ -7,14 +7,17 @@
 </p>
 
 <p align="center">
-  <a href="https://komarev.com/ghpvc/?username=deepakbt&label=Profile+Views&color=70a5fd&style=flat-square">
-    <img src="https://komarev.com/ghpvc/?username=deepakbt&label=Profile+Views&color=70a5fd&style=flat-square" alt="Profile Views"/>
+  <a href="https://komarev.com/ghpvc/?username=deeps1970&label=Profile+Views&color=70a5fd&style=flat-square">
+    <img src="https://komarev.com/ghpvc/?username=deeps1970&label=Profile+Views&color=70a5fd&style=flat-square" alt="Profile Views"/>
   </a>
-  <a href="https://www.linkedin.com/in/deepakbt">
+  <a href="https://www.linkedin.com/in/deepak1970">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="mailto:thiagarajandeepu2007@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Gmail"/>
+  </a>
+  <a href="https://portfolio-deeps1970.vercel.app/">
+    <img src=" https://img.shields.io/badge/%27Kindly,%20Visit%20my%27%20Portfolio-20B2AA?style=Kindly,-Visit-my" alt="Portfolio"/>
   </a>
 </p>
 
@@ -91,11 +94,11 @@ print(me.motto())
 ## 📊 GitHub Stats
 
 <div align="center">
-  <a href="https://github.com/deepakbt">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=deepakbt&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=70a5fd&icon_color=bf91f3&text_color=c9d1d9&border_radius=10"/>
+  <a href="https://github.com/deeps1970">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=deeps1970&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=70a5fd&icon_color=bf91f3&text_color=c9d1d9&border_radius=10"/>
   </a>
-  <a href="https://github.com/deepakbt">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=deepakbt&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&text_color=c9d1d9&langs_count=8&border_radius=10"/>
+  <a href="https://github.com/deeps1970">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=deeps1970&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&text_color=c9d1d9&langs_count=8&border_radius=10"/>
   </a>
 </div>
 
@@ -104,7 +107,7 @@ print(me.motto())
 ## 🔥 Streak Stats
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=deepakbt&theme=tokyonight-duo&hide_border=true&background=0D1117&ring=70A5FD&fire=BF91F3&currStreakLabel=70A5FD&sideLabels=38BDAE&dates=8B949E&currStreakNum=C9D1D9&sideNums=C9D1D9&stroke=0D1117&border_radius=10" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=deeps1970&theme=tokyonight-duo&hide_border=true&background=0D1117&ring=70A5FD&fire=BF91F3&currStreakLabel=70A5FD&sideLabels=38BDAE&dates=8B949E&currStreakNum=C9D1D9&sideNums=C9D1D9&stroke=0D1117&border_radius=10" alt="GitHub Streak" />
 </div>
 
 ---
@@ -112,7 +115,7 @@ print(me.motto())
 ## 📈 Activity Graph
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=deepakbt&theme=tokyo-night&bg_color=0d1117&color=70a5fd&line=bf91f3&point=38bdae&area=true&hide_border=true" alt="Activity Graph" width="100%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=deeps1970&theme=tokyo-night&bg_color=0d1117&color=70a5fd&line=bf91f3&point=38bdae&area=true&hide_border=true" alt="Activity Graph" width="100%"/>
 </div>
 
 ---
@@ -120,7 +123,7 @@ print(me.motto())
 ## 🏆 Trophy Wall
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=deepakbt&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7&margin-w=4" alt="Trophies"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=deeps1970&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7&margin-w=4" alt="Trophies"/>
 </div>
 
 ---
