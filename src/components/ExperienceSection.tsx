@@ -3,6 +3,20 @@ import SectionGlow from "./SectionGlow";
 
 const internships = [
   {
+    role: "Front-end AI Engineer",
+    company: "FlyRank AI",
+    location: "Remote",
+    period: "July 2026 – Present",
+    description: "Currently interning at FlyRank AI as an AI intern, focusing on Front-end AI Engineering.",
+  },
+  {
+    role: "AI & Full Stack Engineer",
+    company: "SNR Automation Pvt Ltd",
+    location: "Hybrid",
+    period: "Feb 2026 – Apr 2026",
+    description: "Built a mini ERP like system for a distributor handling brands like Nestlé, Britannia, Sunfeast, and Gold Winner across Kumbakonam, enabling centralized data management. Collaborated with clients through on-site visits and remote coordination to understand workflows, implement solutions, and resolve system-level and UI issues.",
+  },
+  {
     role: "Web Development Intern",
     company: "ApexPlanet Software Pvt Ltd",
     location: "Remote",
