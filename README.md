@@ -25,7 +25,10 @@
 
 ## 🧑‍💻 About Me
 
-<img align="right" width="380" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif"/>
+<div align="right" style="width:380px">
+  <img width="380" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif"/>
+  <img width="380" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd4bXVhbTFkc3ZyNGw0NTZ6dGF5cmFtb3B4ZnVkZXV6bHZtYzlhbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif"/>
+</div>
 
 ```python
 class DeepakBT:
