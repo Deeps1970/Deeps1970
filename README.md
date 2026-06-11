@@ -182,9 +182,9 @@ print(me.motto())
 
 | Project | Stack | Highlights |
 |---|---|---|
-| 🗂️ **[Elective Navigator](https://github.com/deepakbt)** *(Apr 2026)* | React.js · Next.js · MySQL · Node.js | Elective management system for department-level administration — handles student preferences, allocations, and academic processes post-deployment and handover |
-| 🤖 **[AI Life Copilot](https://github.com/deepakbt)** *(Mar 2026)* | Python · OpenAI API · LLMs · React.js | AI-powered lifestyle intelligence platform — helps users manage health, productivity, and habits with intelligent insights and a conversational AI assistant |
-| 📊 **[DashSphere](https://github.com/deepakbt)** *(Dec 2025)* | React.js · Node.js · MySQL · PHP | Centralized project dashboard for departments — enables monitoring, organizing, and managing student projects, progress tracking, and related academic activities efficiently |
+| 🗂️ **[Elective Navigator](https://github.com/Deeps1970/elective-navigator)** *(Apr 2026)* | React.js · Next.js · MySQL · Node.js | Elective management system for department-level administration — handles student preferences, allocations, and academic processes post-deployment and handover |
+| 🤖 **[AI Life Copilot](https://github.com/joshuahanielgts/Ai-life-copilot-HF26)** *(Mar 2026)* | Python · OpenAI API · LLMs · React.js | AI-powered lifestyle intelligence platform — helps users manage health, productivity, and habits with intelligent insights and a conversational AI assistant |
+| 📊 **[DashSphere](https://github.com/Deeps1970/DashSphere---A-Project-Dashboard-for-Universities-Organizations)** *(Dec 2025)* | React.js · Node.js · MySQL · PHP | Centralized project dashboard for departments — enables monitoring, organizing, and managing student projects, progress tracking, and related academic activities efficiently |
 
 </div>
 
