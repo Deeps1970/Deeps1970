@@ -25,11 +25,9 @@
 
 ## 🧑‍💻 About Me
 
-<div align="right">
-  <img width="360" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif"/>
-  <br/>
-  <img width="360" src="https://media.giphy.com/media/LaVp0AyqR5bGsC5Cbm/giphy.gif"/>
-</div>
+<table>
+<tr>
+<td valign="top" width="60%">
 
 ```python
 class DeepakBT:
@@ -55,14 +53,16 @@ class DeepakBT:
 
 me = DeepakBT()
 print(me.motto())
-` ``
-
-
-```
-<br clear="right"/>
 ```
 
-<br clear="right"/>
+</td>
+<td valign="top" width="40%" align="center">
+  <img width="340" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif"/>
+  <br/>
+  <img width="340" src="https://media.giphy.com/media/LaVp0AyqR5bGsC5Cbm/giphy.gif"/>
+</td>
+</tr>
+</table>
 
 ---
 
