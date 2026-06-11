@@ -132,7 +132,9 @@ print(me.motto())
 ## 🏆 Trophy Wall
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=deeps1970&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6&margin-w=4&margin-h=4" alt="Trophies"/>
+  <a href="https://github.com/deeps1970">
+    <img src="https://github-profile-trophy.vercel.app/?username=deeps1970&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6&margin-w=8&margin-h=4&title=Stars,Followers,Commits,Repositories,PullRequest,Issues" alt="Trophies"/>
+  </a>
 </div>
 
 ---
