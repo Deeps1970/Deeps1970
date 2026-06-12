@@ -78,7 +78,13 @@ const ExperienceSection = () => {
                       <img
                         src={asset.logo}
                         alt={`${item.company} logo`}
+                        referrerPolicy="no-referrer"
+                        crossOrigin="anonymous"
+                        loading="lazy"
                         className="w-12 h-12 rounded-lg object-cover border border-border bg-muted shrink-0"
+                        onError={(e) => {
+                          (e.currentTarget as HTMLImageElement).style.display = "none";
+                        }}
                       />
                     ) : (
                       <div className="w-12 h-12 rounded-lg shrink-0 flex items-center justify-center bg-gradient-to-br from-accent/20 to-accent/5 border border-accent/20 text-accent font-medium text-sm">
