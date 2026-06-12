@@ -1,5 +1,6 @@
-import { Briefcase, Calendar, MapPin } from "lucide-react";
+import { Briefcase, Calendar, MapPin, FileText, Award, Clock, FileCheck } from "lucide-react";
 import SectionGlow from "./SectionGlow";
+import { RESUME_URL, experienceAssets } from "@/data/portfolioAssets";
 
 const internships = [
   {
@@ -42,26 +43,92 @@ const ExperienceSection = () => {
         ]}
       />
       <div className="container max-w-6xl mx-auto px-6 py-24 relative z-10">
-        <h2 className="text-3xl font-medium tracking-display text-foreground mb-12">Internship Experience</h2>
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-12">
+          <h2 className="text-3xl font-medium tracking-display text-foreground">Internship Experience</h2>
+          <a
+            href={RESUME_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-accent text-accent bg-transparent hover:bg-accent/10 transition-all text-sm font-medium"
+          >
+            View Resume
+            <FileText size={16} />
+          </a>
+        </div>
         <div className="space-y-6">
-          {internships.map((item, i) => (
-            <div key={i} className="bg-card border border-border rounded-xl p-6 md:p-8 transition-shadow hover:shadow-lg hover:shadow-accent/5">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
-                <div>
-                  <h3 className="text-lg font-medium text-foreground flex items-center gap-2">
-                    <Briefcase size={16} className="text-accent" />
-                    {item.role}
-                  </h3>
-                  <p className="text-sm text-muted-foreground mt-1">{item.company}</p>
+          {internships.map((item, i) => {
+            const asset = experienceAssets[item.company];
+            const initials = item.company
+              .replace(/Pvt Ltd|EdTech|AI|Software/gi, "")
+              .trim()
+              .split(/\s+/)
+              .map((w) => w[0])
+              .slice(0, 2)
+              .join("")
+              .toUpperCase();
+            return (
+              <div
+                key={i}
+                className="bg-card border border-border rounded-xl p-6 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-xl hover:shadow-accent/10"
+              >
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                  <div className="flex items-start gap-4">
+                    {asset?.logo ? (
+                      <img
+                        src={asset.logo}
+                        alt={`${item.company} logo`}
+                        className="w-12 h-12 rounded-lg object-cover border border-border bg-muted shrink-0"
+                      />
+                    ) : (
+                      <div className="w-12 h-12 rounded-lg shrink-0 flex items-center justify-center bg-gradient-to-br from-accent/20 to-accent/5 border border-accent/20 text-accent font-medium text-sm">
+                        {initials}
+                      </div>
+                    )}
+                    <div>
+                      <h3 className="text-lg font-medium text-foreground flex items-center gap-2">
+                        <Briefcase size={16} className="text-accent" />
+                        {item.role}
+                      </h3>
+                      <p className="text-sm text-muted-foreground mt-1">{item.company}</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col sm:flex-row gap-3 text-sm text-muted-foreground shrink-0">
+                    <span className="inline-flex items-center gap-1.5"><MapPin size={14} />{item.location}</span>
+                    <span className="inline-flex items-center gap-1.5"><Calendar size={14} />{item.period}</span>
+                  </div>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-3 text-sm text-muted-foreground shrink-0">
-                  <span className="inline-flex items-center gap-1.5"><MapPin size={14} />{item.location}</span>
-                  <span className="inline-flex items-center gap-1.5"><Calendar size={14} />{item.period}</span>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                <div className="flex flex-wrap gap-3 mt-6 pt-5 border-t border-border">
+                  <a
+                    href={asset?.offerLetter || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-accent text-accent bg-transparent hover:bg-accent/10 transition-all text-xs font-medium"
+                  >
+                    <FileText size={14} />
+                    View Offer Letter
+                  </a>
+                  {asset?.inProgress ? (
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-muted-foreground bg-transparent text-xs font-medium cursor-not-allowed">
+                      <Clock size={14} />
+                      In Progress
+                    </span>
+                  ) : (
+                    <a
+                      href={asset?.certificate || "#"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-accent text-accent bg-transparent hover:bg-accent/10 transition-all text-xs font-medium"
+                    >
+                      <FileCheck size={14} />
+                      View Internship Certificate
+                    </a>
+                  )}
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
