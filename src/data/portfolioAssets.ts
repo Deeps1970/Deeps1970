@@ -15,6 +15,25 @@ export type ExperienceAsset = {
   inProgress?: boolean;
 };
 
+export const toDirectDropboxImageUrl = (url?: string) => {
+  if (!url || url === "#") return url;
+
+  try {
+    const directUrl = new URL(url);
+
+    if (directUrl.hostname === "www.dropbox.com" || directUrl.hostname === "dropbox.com") {
+      directUrl.hostname = "dl.dropboxusercontent.com";
+      directUrl.searchParams.delete("dl");
+      directUrl.searchParams.delete("raw");
+      return directUrl.toString();
+    }
+
+    return url;
+  } catch {
+    return url;
+  }
+};
+
 export const experienceAssets: Record<string, ExperienceAsset> = {
   "FlyRank AI": {
     company: "FlyRank AI",
