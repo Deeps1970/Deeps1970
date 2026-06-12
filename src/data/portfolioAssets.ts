@@ -18,25 +18,25 @@ export type ExperienceAsset = {
 export const experienceAssets: Record<string, ExperienceAsset> = {
   "FlyRank AI": {
     company: "FlyRank AI",
-    logo: "https://media.licdn.com/dms/image/v2/D4D0BAQFImJOWJQrw7Q/company-logo_200_200/B4DZ47fBzzJ8AE-/0/1779114450389/flyrank_logo?e=1782950400&v=beta&t=G6BdnCjR0UQwtx4G1z3-TSiJvjrTKMBumxZADmHdJd8",
+    logo: "https://www.dropbox.com/scl/fi/arpg59ysw1x9em48j3qzz/flyrank_logo.jpg?rlkey=ffnchg850gqfvf16a2jff6pxi&st=x4fyct53&dl=0",
     offerLetter: "https://www.dropbox.com/scl/fi/w7xcbfzpiai3qnp83r6kw/flyrank-internship-confirmation-deepak-thiagarajan-july-2026-6-weeks.pdf?rlkey=edg1hs12rfazr62fxi584epez&st=by8j8i2n&dl=0",
     inProgress: true,
   },
   "SNR Automation Pvt Ltd": {
     company: "SNR Automation Pvt Ltd",
-    logo: "https://media.licdn.com/dms/image/v2/D560BAQGuqCM1tGg99w/company-logo_200_200/B56ZsIWxjgIcAI-/0/1765371747036/snrautomations_logo?e=1782950400&v=beta&t=yYxfyg5AjOjIT8GG34qoBtFBtgBb3jqiixnp4i8OKps",
+    logo: "https://www.dropbox.com/scl/fi/xybf1lb3pi5pbidnqtffv/snrautomations_logo.jpg?rlkey=0uaqur18ph7wym4qsxvhdbb84&st=na8bprfw&dl=0",
     offerLetter: "https://www.dropbox.com/scl/fi/nva8i2tlad1m3gdwk6wbf/Offer-letter-SNR-Automation.pdf?rlkey=9i6etpzp7bghtxg4o0cidqyrt&st=g9jfhd5a&dl=0",
     certificate: "https://www.dropbox.com/scl/fi/t7v4kwapn0zb85qbcdwbs/download-1.pdf?rlkey=yeigw4jz4nmvw8r9rgm6by1va&st=o8ktijpb&dl=0",
   },
   "ApexPlanet Software Pvt Ltd": {
     company: "ApexPlanet Software Pvt Ltd",
-    logo: "https://media.licdn.com/dms/image/v2/D4D0BAQHOhKGLw3sxmA/img-crop_100/B4DZcB7VrnGcBA-/0/1748084023993?e=1782950400&v=beta&t=rAS1UmqG3LMgcmvcfna9gFDntSkcgcFk4QqFUMWluc4",
+    logo: "https://www.dropbox.com/scl/fi/rkkn0i9rxuuqgj878u73g/1748084023993.jpg?rlkey=gtqagd2ub5y51x4evz7y7mmvs&st=mwkkcc6r&dl=0",
     offerLetter: "https://media.licdn.com/dms/image/v2/D4D22AQFKGdPIC3DygA/feedshare-shrink_800/B4DZgcLgq.GQAg-/0/1752819437688?e=1782950400&v=beta&t=j5AGnxQdXIg2SUawl2ENR7smloQdFf8b1wqhM6FsC1g",
     certificate: "https://www.dropbox.com/scl/fi/995jpx6iwpr7kaa6ttw9g/download.pdf?rlkey=n8cbvx6nkq8bhxty2eoce59ms&st=osivbjbn&dl=0",
   },
   "Learnflu EdTech": {
     company: "Learnflu EdTech",
-    logo: "https://media.licdn.com/dms/image/v2/D560BAQHcCeJogJTBEw/company-logo_200_200/B56ZuES8m8JoAI-/0/1767451118825?e=1782950400&v=beta&t=ziaEjmM5Bw99rmfa9bnJ-M5HRUuKZo4moV6fA-KbKMM",
+    logo: "https://www.dropbox.com/scl/fi/pkxo4s86ga79l6zlaqqoe/1767451118825.jpg?rlkey=fahzw09tlll63efgz5h5oqwat&st=ybumre7y&dl=0",
     offerLetter: "#",
     certificate: "https://www.dropbox.com/scl/fi/faqxkkq73gkv87aw96089/Certificate-of-appreciation.pdf?rlkey=1xanjpx4e15iqdi6s88ouzx5n&st=u24uutym&dl=0",
   },
