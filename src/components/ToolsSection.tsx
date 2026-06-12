@@ -2,10 +2,10 @@ import { Wrench, BookOpen } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import SectionGlow from "./SectionGlow";
 
-type Tool = { name: string; slug?: string; icon?: LucideIcon };
+type Tool = { name: string; slug?: string; color?: string; icon?: LucideIcon };
 
 const tools: Tool[] = [
-  { name: "VS Code", slug: "visualstudiocode" },
+  { name: "VS Code", slug: "vscodium", color: "2F80ED" },
   { name: "Node.js", slug: "nodedotjs" },
   { name: "Git & GitHub", slug: "github" },
   { name: "XAMPP Control Panel", slug: "xampp" },
@@ -36,7 +36,7 @@ const ToolsSection = () => {
               >
                 {tool.slug ? (
                   <img
-                    src={`https://cdn.simpleicons.org/${tool.slug}`}
+                    src={`https://cdn.simpleicons.org/${tool.slug}${tool.color ? `/${tool.color}` : ""}`}
                     alt=""
                     aria-hidden="true"
                     loading="lazy"
