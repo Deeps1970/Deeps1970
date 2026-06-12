@@ -1,6 +1,6 @@
 import { Briefcase, Calendar, MapPin, FileText, Award, Clock, FileCheck } from "lucide-react";
 import SectionGlow from "./SectionGlow";
-import { RESUME_URL, experienceAssets } from "@/data/portfolioAssets";
+import { RESUME_URL, experienceAssets, toDirectDropboxImageUrl } from "@/data/portfolioAssets";
 
 const internships = [
   {
@@ -74,22 +74,20 @@ const ExperienceSection = () => {
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                   <div className="flex items-start gap-4">
-                    {asset?.logo ? (
+                    <div className="w-12 h-12 rounded-lg shrink-0 flex items-center justify-center bg-gradient-to-br from-accent/20 to-accent/5 border border-accent/20 text-accent font-medium text-sm overflow-hidden">
+                      <span>{initials}</span>
+                    </div>
+                    {asset?.logo && (
                       <img
-                        src={asset.logo}
+                        src={toDirectDropboxImageUrl(asset.logo)}
                         alt={`${item.company} logo`}
                         referrerPolicy="no-referrer"
-                        crossOrigin="anonymous"
                         loading="lazy"
-                        className="w-12 h-12 rounded-lg object-cover border border-border bg-muted shrink-0"
+                        className="w-12 h-12 rounded-lg object-cover border border-border bg-muted shrink-0 -ml-16 relative z-10"
                         onError={(e) => {
                           (e.currentTarget as HTMLImageElement).style.display = "none";
                         }}
                       />
-                    ) : (
-                      <div className="w-12 h-12 rounded-lg shrink-0 flex items-center justify-center bg-gradient-to-br from-accent/20 to-accent/5 border border-accent/20 text-accent font-medium text-sm">
-                        {initials}
-                      </div>
                     )}
                     <div>
                       <h3 className="text-lg font-medium text-foreground flex items-center gap-2">
