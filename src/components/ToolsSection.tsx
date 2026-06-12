@@ -2,10 +2,10 @@ import { Wrench, BookOpen } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import SectionGlow from "./SectionGlow";
 
-type Tool = { name: string; slug?: string; icon?: LucideIcon };
+type Tool = { name: string; slug?: string; color?: string; src?: string; icon?: LucideIcon };
 
 const tools: Tool[] = [
-  { name: "VS Code", slug: "visualstudiocode" },
+  { name: "VS Code", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
   { name: "Node.js", slug: "nodedotjs" },
   { name: "Git & GitHub", slug: "github" },
   { name: "XAMPP Control Panel", slug: "xampp" },
@@ -34,9 +34,9 @@ const ToolsSection = () => {
                 key={tool.name}
                 className="inline-flex items-center gap-2 px-4 py-2 text-sm font-mono text-foreground bg-card border border-border rounded-lg hover:border-accent/40 transition-colors"
               >
-                {tool.slug ? (
+                {tool.src || tool.slug ? (
                   <img
-                    src={`https://cdn.simpleicons.org/${tool.slug}`}
+                    src={tool.src ?? `https://cdn.simpleicons.org/${tool.slug}${tool.color ? `/${tool.color}` : ""}`}
                     alt=""
                     aria-hidden="true"
                     loading="lazy"

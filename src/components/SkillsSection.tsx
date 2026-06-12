@@ -2,7 +2,7 @@ import SectionGlow from "./SectionGlow";
 import { Brain, BarChart3, Network } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
-type SkillItem = { name: string; slug?: string; icon?: LucideIcon };
+type SkillItem = { name: string; slug?: string; color?: string; icon?: LucideIcon };
 
 const skillGroups: { title: string; skills: SkillItem[] }[] = [
   {
@@ -35,7 +35,7 @@ const skillGroups: { title: string; skills: SkillItem[] }[] = [
       { name: "Pandas", slug: "pandas" },
       { name: "Scikit-learn", slug: "scikitlearn" },
       { name: "TensorFlow (basic)", slug: "tensorflow" },
-      { name: "OpenAI API / LLM", slug: "openai" },
+      { name: "OpenAI API / LLM", slug: "openai", color: "white" },
     ],
   },
   {
@@ -57,7 +57,7 @@ const SkillBadge = ({ skill }: { skill: SkillItem }) => {
     <span className="inline-flex items-center gap-2 px-3 py-1.5 text-sm font-mono text-foreground bg-card border border-border rounded-md hover:border-accent/40 transition-colors">
       {skill.slug ? (
         <img
-          src={`https://cdn.simpleicons.org/${skill.slug}`}
+          src={`https://cdn.simpleicons.org/${skill.slug}${skill.color ? `/${skill.color}` : ""}`}
           alt=""
           aria-hidden="true"
           loading="lazy"
