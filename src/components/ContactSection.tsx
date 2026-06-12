@@ -1,5 +1,6 @@
 import { FormEvent } from "react";
 import SectionGlow from "./SectionGlow";
+import profileImg from "@/assets/profile.jpeg";
 
 const ContactSection = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -22,9 +23,10 @@ const ContactSection = () => {
       />
       <div className="container max-w-6xl mx-auto px-6 py-12 w-full relative z-10">
         <h2 className="text-3xl font-medium tracking-display text-foreground mb-8">Contact</h2>
-        <div className="max-w-lg">
-          <p className="text-muted-foreground mb-8">Have a project in mind or want to collaborate? Send me a message.</p>
-          <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-7 max-w-lg">
+            <p className="text-muted-foreground mb-8">Have a project in mind or want to collaborate? Send me a message.</p>
+            <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">Name</label>
               <input id="name" name="name" type="text" required className="w-full px-4 py-2.5 text-sm bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-foreground placeholder:text-muted-foreground" placeholder="Your name" />
@@ -40,7 +42,18 @@ const ContactSection = () => {
             <button type="submit" className="inline-flex items-center px-6 py-3 text-sm font-medium bg-accent text-accent-foreground rounded-lg hover:brightness-110 transition-all shadow-lg shadow-accent/20">
               Send Message
             </button>
-          </form>
+            </form>
+          </div>
+          <div className="hidden lg:flex lg:col-span-5 justify-center">
+            <div className="relative">
+              <div className="absolute -inset-6 rounded-3xl blur-3xl bg-[radial-gradient(circle,hsl(239_84%_67%/0.2),hsl(142_71%_45%/0.1),transparent)]" />
+              <img
+                src={profileImg}
+                alt="Deepak B T"
+                className="relative w-72 h-72 xl:w-80 xl:h-80 object-cover rounded-2xl border border-border"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
