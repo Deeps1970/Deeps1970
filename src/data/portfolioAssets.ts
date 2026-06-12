@@ -18,27 +18,27 @@ export type ExperienceAsset = {
 export const experienceAssets: Record<string, ExperienceAsset> = {
   "FlyRank AI": {
     company: "FlyRank AI",
-    logo: "",
-    offerLetter: "#",
+    logo: "https://media.licdn.com/dms/image/v2/D4D0BAQFImJOWJQrw7Q/company-logo_200_200/B4DZ47fBzzJ8AE-/0/1779114450389/flyrank_logo?e=1782950400&v=beta&t=G6BdnCjR0UQwtx4G1z3-TSiJvjrTKMBumxZADmHdJd8",
+    offerLetter: "https://www.dropbox.com/scl/fi/w7xcbfzpiai3qnp83r6kw/flyrank-internship-confirmation-deepak-thiagarajan-july-2026-6-weeks.pdf?rlkey=edg1hs12rfazr62fxi584epez&st=by8j8i2n&dl=0",
     inProgress: true,
   },
   "SNR Automation Pvt Ltd": {
     company: "SNR Automation Pvt Ltd",
-    logo: "",
-    offerLetter: "#",
-    certificate: "#",
+    logo: "https://media.licdn.com/dms/image/v2/D560BAQGuqCM1tGg99w/company-logo_200_200/B56ZsIWxjgIcAI-/0/1765371747036/snrautomations_logo?e=1782950400&v=beta&t=yYxfyg5AjOjIT8GG34qoBtFBtgBb3jqiixnp4i8OKps",
+    offerLetter: "https://www.dropbox.com/scl/fi/nva8i2tlad1m3gdwk6wbf/Offer-letter-SNR-Automation.pdf?rlkey=9i6etpzp7bghtxg4o0cidqyrt&st=g9jfhd5a&dl=0",
+    certificate: "https://www.dropbox.com/scl/fi/t7v4kwapn0zb85qbcdwbs/download-1.pdf?rlkey=yeigw4jz4nmvw8r9rgm6by1va&st=o8ktijpb&dl=0",
   },
   "ApexPlanet Software Pvt Ltd": {
     company: "ApexPlanet Software Pvt Ltd",
-    logo: "",
-    offerLetter: "#",
-    certificate: "#",
+    logo: "https://media.licdn.com/dms/image/v2/D4D0BAQHOhKGLw3sxmA/img-crop_100/B4DZcB7VrnGcBA-/0/1748084023993?e=1782950400&v=beta&t=rAS1UmqG3LMgcmvcfna9gFDntSkcgcFk4QqFUMWluc4",
+    offerLetter: "https://media.licdn.com/dms/image/v2/D4D22AQFKGdPIC3DygA/feedshare-shrink_800/B4DZgcLgq.GQAg-/0/1752819437688?e=1782950400&v=beta&t=j5AGnxQdXIg2SUawl2ENR7smloQdFf8b1wqhM6FsC1g",
+    certificate: "https://www.dropbox.com/scl/fi/995jpx6iwpr7kaa6ttw9g/download.pdf?rlkey=n8cbvx6nkq8bhxty2eoce59ms&st=osivbjbn&dl=0",
   },
   "Learnflu EdTech": {
     company: "Learnflu EdTech",
-    logo: "",
+    logo: "https://media.licdn.com/dms/image/v2/D560BAQHcCeJogJTBEw/company-logo_200_200/B56ZuES8m8JoAI-/0/1767451118825?e=1782950400&v=beta&t=ziaEjmM5Bw99rmfa9bnJ-M5HRUuKZo4moV6fA-KbKMM",
     offerLetter: "#",
-    certificate: "#",
+    certificate: "https://www.dropbox.com/scl/fi/faqxkkq73gkv87aw96089/Certificate-of-appreciation.pdf?rlkey=1xanjpx4e15iqdi6s88ouzx5n&st=u24uutym&dl=0",
   },
 };
 
@@ -50,7 +50,7 @@ export type CertificationAsset = {
 
 export const certificationAssets: Record<string, CertificationAsset> = {
   "Full Stack Web Development": { title: "Full Stack Web Development", inProgress: true },
-  "MERN Stack Masterclass": { title: "MERN Stack Masterclass", certificate: "#" },
-  "Full Stack Development Webinar": { title: "Full Stack Development Webinar", certificate: "#" },
-  "Git & GitHub Workshop": { title: "Git & GitHub Workshop", certificate: "#" },
+  "MERN Stack Masterclass": { title: "MERN Stack Masterclass", certificate: "https://media.licdn.com/dms/image/v2/D4D2DAQGMLDMufjhwqw/profile-treasury-document-images_1280/B4DZgcsrktGkAY-/1/1752828133321?e=1782345600&v=beta&t=GouX4r9adhlXe69iiEsJw96XH_TvEgIcezImZgU7mx0" },
+  "Full Stack Development Webinar": { title: "Full Stack Development Webinar", certificate: "https://www.dropbox.com/scl/fi/7fgfxjlkic8fxoat92ex6/FSWD-Webinar.Guvi-Participation.png?rlkey=y0cv2a0ujl5u90eh0etvc6plo&st=46wweeqf&dl=0" },
+  "Git & GitHub Workshop": { title: "Git & GitHub Workshop", certificate: "https://media.licdn.com/dms/image/v2/D4D2DAQGpfHZ4iOHFyg/profile-treasury-image-shrink_800_800/B4DZgclOM6HsAY-/0/1752826178841?e=1781845200&v=beta&t=CqP3ceTN5-HXeix9AQSOWMBRfunSzeVgNt9BB4DFEmY" },
 };
