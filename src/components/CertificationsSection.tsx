@@ -1,6 +1,8 @@
 import { Award, FileCheck, Clock } from "lucide-react";
+import { useState } from "react";
 import SectionGlow from "./SectionGlow";
 import { certificationAssets } from "@/data/portfolioAssets";
+import AssetViewer, { type AssetViewerItem } from "./AssetViewer";
 
 const certifications = [
   { title: "Full Stack Web Development", org: "Udemy", year: "2024" },
@@ -10,6 +12,7 @@ const certifications = [
 ];
 
 const CertificationsSection = () => {
+  const [viewerAsset, setViewerAsset] = useState<AssetViewerItem | null>(null);
   return (
     <section id="certifications" className="relative overflow-hidden">
       <SectionGlow
@@ -43,15 +46,22 @@ const CertificationsSection = () => {
                       In Progress
                     </span>
                   ) : (
-                    <a
-                      href={asset?.certificate || "#"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-accent text-accent bg-transparent hover:bg-accent/10 transition-all text-xs font-medium"
+                    <button
+                      type="button"
+                      disabled={!asset?.certificate}
+                      onClick={() =>
+                        asset?.certificate &&
+                        setViewerAsset({
+                          url: asset.certificate,
+                          title: cert.title,
+                          kind: "auto",
+                        })
+                      }
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-accent text-accent bg-transparent hover:bg-accent/10 transition-all text-xs font-medium disabled:opacity-40 disabled:cursor-not-allowed"
                     >
                       <FileCheck size={14} />
                       View Certification
-                    </a>
+                    </button>
                   )}
                 </div>
               </div>
@@ -59,6 +69,7 @@ const CertificationsSection = () => {
           })}
         </div>
       </div>
+      <AssetViewer asset={viewerAsset} onClose={() => setViewerAsset(null)} />
     </section>
   );
 };

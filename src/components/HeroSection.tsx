@@ -6,12 +6,14 @@ import AnimatedGridLines from "./AnimatedGridLines";
 import TypewriterText from "./TypewriterText";
 import { useState } from "react";
 import { RESUME_URL } from "@/data/portfolioAssets";
+import AssetViewer, { type AssetViewerItem } from "./AssetViewer";
 
 const LINKEDIN = "https://www.linkedin.com/in/deepak1970/";
 
 const HeroSection = () => {
   const [line1Done, setLine1Done] = useState(false);
   const [line2Done, setLine2Done] = useState(false);
+  const [viewerAsset, setViewerAsset] = useState<AssetViewerItem | null>(null);
 
   return (
     <section id="home" className="pt-16 min-h-screen flex items-center relative overflow-hidden">
@@ -98,16 +100,14 @@ const HeroSection = () => {
                 View Projects
                 <ArrowDown size={16} />
               </a>
-              <a
-                href={RESUME_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                download
+              <button
+                type="button"
+                onClick={() => setViewerAsset({ url: RESUME_URL, title: "Resume — Deepak B T", kind: "pdf" })}
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-accent text-accent bg-transparent hover:bg-accent/10 transition-all text-sm font-medium"
               >
                 View Resume
                 <FileText size={16} />
-              </a>
+              </button>
               <a
                 href="https://github.com/Deeps1970"
                 target="_blank"
@@ -146,6 +146,7 @@ const HeroSection = () => {
           </motion.div>
         </div>
       </div>
+      <AssetViewer asset={viewerAsset} onClose={() => setViewerAsset(null)} />
     </section>
   );
 };
