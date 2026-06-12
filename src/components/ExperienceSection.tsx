@@ -1,6 +1,8 @@
-import { Briefcase, Calendar, MapPin, FileText, Award, Clock, FileCheck } from "lucide-react";
+import { Briefcase, Calendar, MapPin, FileText, Clock, FileCheck } from "lucide-react";
+import { useState } from "react";
 import SectionGlow from "./SectionGlow";
 import { RESUME_URL, experienceAssets, toDirectDropboxImageUrl } from "@/data/portfolioAssets";
+import AssetViewer, { type AssetViewerItem } from "./AssetViewer";
 
 const internships = [
   {
@@ -34,6 +36,7 @@ const internships = [
 ];
 
 const ExperienceSection = () => {
+  const [viewerAsset, setViewerAsset] = useState<AssetViewerItem | null>(null);
   return (
     <section id="experience" className="bg-muted relative overflow-hidden">
       <SectionGlow
@@ -45,16 +48,14 @@ const ExperienceSection = () => {
       <div className="container max-w-6xl mx-auto px-6 py-24 relative z-10">
         <div className="flex flex-wrap items-center justify-between gap-4 mb-12">
           <h2 className="text-3xl font-medium tracking-display text-foreground">Internship Experience</h2>
-          <a
-            href={RESUME_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            download
+          <button
+            type="button"
+            onClick={() => setViewerAsset({ url: RESUME_URL, title: "Resume — Deepak B T", kind: "pdf" })}
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-accent text-accent bg-transparent hover:bg-accent/10 transition-all text-sm font-medium"
           >
             View Resume
             <FileText size={16} />
-          </a>
+          </button>
         </div>
         <div className="space-y-6">
           {internships.map((item, i) => {
@@ -104,30 +105,46 @@ const ExperienceSection = () => {
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
                 <div className="flex flex-wrap gap-3 mt-6 pt-5 border-t border-border">
-                  <a
-                    href={asset?.offerLetter || "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-accent text-accent bg-transparent hover:bg-accent/10 transition-all text-xs font-medium"
+                  <button
+                    type="button"
+                    disabled={!asset?.offerLetter || asset.offerLetter === "#"}
+                    onClick={() =>
+                      asset?.offerLetter &&
+                      asset.offerLetter !== "#" &&
+                      setViewerAsset({
+                        url: asset.offerLetter,
+                        title: `${item.company} — Offer Letter`,
+                        kind: "auto",
+                      })
+                    }
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-accent text-accent bg-transparent hover:bg-accent/10 transition-all text-xs font-medium disabled:opacity-40 disabled:cursor-not-allowed"
                   >
                     <FileText size={14} />
                     View Offer Letter
-                  </a>
+                  </button>
                   {asset?.inProgress ? (
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-muted-foreground bg-transparent text-xs font-medium cursor-not-allowed">
                       <Clock size={14} />
                       In Progress
                     </span>
                   ) : (
-                    <a
-                      href={asset?.certificate || "#"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-accent text-accent bg-transparent hover:bg-accent/10 transition-all text-xs font-medium"
+                    <button
+                      type="button"
+                      disabled={!asset?.certificate || asset.certificate === "#"}
+                      onClick={() =>
+                        asset?.certificate &&
+                        asset.certificate !== "#" &&
+                        setViewerAsset({
+                          url: asset.certificate,
+                          title: `${item.company} — Internship Certificate`,
+                          kind: "auto",
+                        })
+                      }
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-accent text-accent bg-transparent hover:bg-accent/10 transition-all text-xs font-medium disabled:opacity-40 disabled:cursor-not-allowed"
                     >
                       <FileCheck size={14} />
                       View Internship Certificate
-                    </a>
+                    </button>
                   )}
                 </div>
               </div>
@@ -135,6 +152,7 @@ const ExperienceSection = () => {
           })}
         </div>
       </div>
+      <AssetViewer asset={viewerAsset} onClose={() => setViewerAsset(null)} />
     </section>
   );
 };
