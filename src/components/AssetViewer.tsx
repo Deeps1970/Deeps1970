@@ -21,6 +21,28 @@ const detectKind = (url: string): "image" | "pdf" => {
   return "pdf";
 };
 
+// Build a Dropbox URL that serves raw bytes (no attachment header) so Google
+// Docs Viewer can fetch and render it.
+const toDropboxRawUrl = (url: string): string => {
+  try {
+    const u = new URL(url);
+    if (u.hostname.includes("dropbox.com") || u.hostname.includes("dropboxusercontent.com")) {
+      u.hostname = "dl.dropboxusercontent.com";
+      u.searchParams.delete("dl");
+      u.searchParams.set("raw", "1");
+      return u.toString();
+    }
+  } catch {
+    // ignore
+  }
+  return url;
+};
+
+const buildPdfEmbedUrl = (url: string): string => {
+  const raw = toDropboxRawUrl(url);
+  return `https://docs.google.com/viewer?url=${encodeURIComponent(raw)}&embedded=true`;
+};
+
 const AssetViewer = ({ asset, onClose }: AssetViewerProps) => {
   useEffect(() => {
     if (!asset) return;
@@ -33,6 +55,7 @@ const AssetViewer = ({ asset, onClose }: AssetViewerProps) => {
 
   const direct = asset ? toDirectDropboxImageUrl(asset.url) ?? asset.url : "";
   const kind = asset ? (asset.kind && asset.kind !== "auto" ? asset.kind : detectKind(direct)) : "image";
+  const embedSrc = kind === "pdf" && asset ? buildPdfEmbedUrl(asset.url) : direct;
 
   return (
     <AnimatePresence>
@@ -102,7 +125,7 @@ const AssetViewer = ({ asset, onClose }: AssetViewerProps) => {
                   />
                 ) : (
                   <iframe
-                    src={direct}
+                    src={embedSrc}
                     title={asset.title}
                     className="w-full h-full border-0 bg-white"
                   />
