@@ -10,7 +10,7 @@ const skillGroups: { title: string; skills: SkillItem[] }[] = [
     title: "Frontend",
     skills: [
       { name: "HTML5", slug: "html5" },
-      { name: "CSS3", slug: "css3" },
+      { name: "CSS3", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
       { name: "Tailwind CSS", slug: "tailwindcss" },
       { name: "JavaScript", slug: "javascript" },
       { name: "React", slug: "react" },
