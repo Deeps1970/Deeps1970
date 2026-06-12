@@ -1,10 +1,11 @@
-import { Github, Linkedin, ArrowDown, MapPin } from "lucide-react";
+import { Github, Linkedin, ArrowDown, MapPin, FileText } from "lucide-react";
 import profileImg from "@/assets/profile.jpeg";
 import { motion } from "framer-motion";
 import SectionGlow from "./SectionGlow";
 import AnimatedGridLines from "./AnimatedGridLines";
 import TypewriterText from "./TypewriterText";
 import { useState } from "react";
+import { RESUME_URL } from "@/data/portfolioAssets";
 
 const LINKEDIN = "https://www.linkedin.com/in/deepak1970/";
 
@@ -96,6 +97,16 @@ const HeroSection = () => {
               >
                 View Projects
                 <ArrowDown size={16} />
+              </a>
+              <a
+                href={RESUME_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-accent text-accent bg-transparent hover:bg-accent/10 transition-all text-sm font-medium"
+              >
+                View Resume
+                <FileText size={16} />
               </a>
               <a
                 href="https://github.com/Deeps1970"
