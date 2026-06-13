@@ -39,6 +39,10 @@ const toDropboxRawUrl = (url: string): string => {
 };
 
 const buildPdfEmbedUrl = (url: string): string => {
+  // Same-origin / Lovable CDN assets render natively in an iframe.
+  if (url.startsWith("/") || url.startsWith(window.location.origin)) {
+    return url;
+  }
   const raw = toDropboxRawUrl(url);
   return `https://docs.google.com/viewer?url=${encodeURIComponent(raw)}&embedded=true`;
 };
