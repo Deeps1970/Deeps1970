@@ -50,7 +50,7 @@ export const experienceAssets: Record<string, ExperienceAsset> = {
   "ApexPlanet Software Pvt Ltd": {
     company: "ApexPlanet Software Pvt Ltd",
     logo: "https://www.dropbox.com/scl/fi/rkkn0i9rxuuqgj878u73g/1748084023993.jpg?rlkey=gtqagd2ub5y51x4evz7y7mmvs&st=mwkkcc6r&dl=0",
-    offerLetter: "https://media.licdn.com/dms/image/v2/D4D22AQFKGdPIC3DygA/feedshare-shrink_800/B4DZgcLgq.GQAg-/0/1752819437688?e=1782950400&v=beta&t=j5AGnxQdXIg2SUawl2ENR7smloQdFf8b1wqhM6FsC1g",
+    offerLetter: "https://www.dropbox.com/scl/fi/s7myt68xkiv3h92drkacc/1752819437688.jpg?rlkey=c0ew6vveg9iyvyd0lz56i2bl5&st=0viunju6&dl=0",
     certificate: "https://www.dropbox.com/scl/fi/995jpx6iwpr7kaa6ttw9g/download.pdf?rlkey=n8cbvx6nkq8bhxty2eoce59ms&st=osivbjbn&dl=0",
   },
   "Learnflu EdTech": {
