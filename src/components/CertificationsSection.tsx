@@ -38,16 +38,16 @@ const CertificationsSection = () => {
                 className="flex flex-col border border-border rounded-xl p-5 bg-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-xl hover:shadow-accent/10"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-2 bg-muted rounded-lg shrink-0 w-10 h-10 flex items-center justify-center overflow-hidden">
+                  <div className="shrink-0 w-12 h-12 flex items-center justify-center">
                     {asset?.logo ? (
                       <img
                         src={toDirectDropboxImageUrl(asset.logo)}
                         alt={`${cert.org} logo`}
-                        className="w-full h-full object-contain"
+                        className="max-w-full max-h-full object-contain"
                         loading="lazy"
                       />
                     ) : (
-                      <Award size={20} className="text-accent" />
+                      <Award size={28} className="text-accent" />
                     )}
                   </div>
                   <div>
