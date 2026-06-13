@@ -35,12 +35,6 @@ export const toDirectDropboxImageUrl = (url?: string) => {
 };
 
 export const experienceAssets: Record<string, ExperienceAsset> = {
-  "FlyRank AI": {
-    company: "FlyRank AI",
-    logo: "https://www.dropbox.com/scl/fi/arpg59ysw1x9em48j3qzz/flyrank_logo.jpg?rlkey=ffnchg850gqfvf16a2jff6pxi&st=x4fyct53&dl=0",
-    offerLetter: "https://www.dropbox.com/scl/fi/w7xcbfzpiai3qnp83r6kw/flyrank-internship-confirmation-deepak-thiagarajan-july-2026-6-weeks.pdf?rlkey=edg1hs12rfazr62fxi584epez&st=by8j8i2n&dl=0",
-    inProgress: true,
-  },
   "SNR Automation Pvt Ltd": {
     company: "SNR Automation Pvt Ltd",
     logo: "https://www.dropbox.com/scl/fi/xybf1lb3pi5pbidnqtffv/snrautomations_logo.jpg?rlkey=0uaqur18ph7wym4qsxvhdbb84&st=na8bprfw&dl=0",
