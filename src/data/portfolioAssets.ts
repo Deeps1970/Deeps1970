@@ -77,7 +77,7 @@ export const certificationAssets: Record<string, CertificationAsset> = {
   "MERN Stack Masterclass": {
     title: "MERN Stack Masterclass",
     certificate: "https://media.licdn.com/dms/image/v2/D4D2DAQGMLDMufjhwqw/profile-treasury-document-images_1280/B4DZgcsrktGkAY-/1/1752828133321?e=1782345600&v=beta&t=GouX4r9adhlXe69iiEsJw96XH_TvEgIcezImZgU7mx0",
-    logo: "https://www.google.com/s2/favicons?domain=novitech.in&sz=128",
+    logo: "https://www.dropbox.com/scl/fi/c0f8yx2tahwcqh8p0cknt/novitechresearchanddevelopment_logo.jpg?rlkey=fuf576o68yqey0d52drmiphk6&st=i1vi8q7i&dl=0",
   },
   "Full Stack Development Webinar": {
     title: "Full Stack Development Webinar",
@@ -87,6 +87,6 @@ export const certificationAssets: Record<string, CertificationAsset> = {
   "Git & GitHub Workshop": {
     title: "Git & GitHub Workshop",
     certificate: "https://media.licdn.com/dms/image/v2/D4D2DAQGpfHZ4iOHFyg/profile-treasury-image-shrink_800_800/B4DZgclOM6HsAY-/0/1752826178841?e=1781845200&v=beta&t=CqP3ceTN5-HXeix9AQSOWMBRfunSzeVgNt9BB4DFEmY",
-    logo: "https://www.google.com/s2/favicons?domain=srmist.edu.in&sz=128",
+    logo: "https://www.dropbox.com/scl/fi/ihey9w7gtr9ze64ufrev0/5722.webp?rlkey=ztg8ikgq8dsepu73heob4ge5n&st=u7lm32dd&dl=0",
   },
 };
