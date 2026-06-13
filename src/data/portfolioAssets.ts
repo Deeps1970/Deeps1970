@@ -77,7 +77,7 @@ export const certificationAssets: Record<string, CertificationAsset> = {
   "MERN Stack Masterclass": {
     title: "MERN Stack Masterclass",
     certificate: "https://media.licdn.com/dms/image/v2/D4D2DAQGMLDMufjhwqw/profile-treasury-document-images_1280/B4DZgcsrktGkAY-/1/1752828133321?e=1782345600&v=beta&t=GouX4r9adhlXe69iiEsJw96XH_TvEgIcezImZgU7mx0",
-    logo: "https://instagram.fmaa16-1.fna.fbcdn.net/v/t51.2885-19/140790122_3939280699437491_6283089191949902484_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4zMzguYzIifQ&_nc_ht=instagram.fmaa16-1.fna.fbcdn.net&_nc_cat=1&_nc_oc=Q6cZ2gElSbvPoL6m6RD8qTDHeZ9Kh8MGesW_ivv5bQH_CxYWcI_zgP4WPKriwsO1tOOkMS_At2CItnlbXcq68910VN3H&_nc_ohc=AyAGalY-2yQQ7kNvwG_Y2-3&_nc_gid=JOCIr1pYiYMTLhJqkiWi6Q&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Af-u7apJtfOaujr-mOl3L1_0SWehFfq-6GSP6Qgy3D50GA&oe=6A329E9F&_nc_sid=8b3546",
+    logo: "https://www.dropbox.com/scl/fi/c0f8yx2tahwcqh8p0cknt/novitechresearchanddevelopment_logo.jpg?rlkey=fuf576o68yqey0d52drmiphk6&st=i1vi8q7i&dl=0",
   },
   "Full Stack Development Webinar": {
     title: "Full Stack Development Webinar",
