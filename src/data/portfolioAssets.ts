@@ -77,37 +77,37 @@ export const certificationAssets: Record<string, CertificationAsset> = {
   "Stay Certified – Back-End Developer – ABAP Cloud": {
     title: "Stay Certified – Back-End Developer – ABAP Cloud",
     certificate: "/__l5e/assets-v1/1efbccd2-c8e2-4aec-918c-5edb82311f4c/ABAP-Backend-Dev.pdf",
-    logo: "https://www.google.com/s2/favicons?domain=sap.com&sz=128",
+    logo: "https://imgs.search.brave.com/vZdmXRO82pw6hxGZUxLg7-TMpMFK76f_0svmtby2FPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nby53aW5lL2Ev/bG9nby9TQVBfU0Uv/U0FQX1NFLUxvZ28u/d2luZS5zdmc",
   },
   "Implementing Fund Accounting in SAP S/4HANA Cloud Public Edition": {
     title: "Implementing Fund Accounting in SAP S/4HANA Cloud Public Edition",
     certificate: "/__l5e/assets-v1/363695df-7288-4761-bbee-d1f79ab215f3/Implementing_Fund_Accounting_in_SAP.jpg",
-    logo: "https://www.google.com/s2/favicons?domain=sap.com&sz=128",
+    logo: "https://imgs.search.brave.com/vZdmXRO82pw6hxGZUxLg7-TMpMFK76f_0svmtby2FPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nby53aW5lL2Ev/bG9nby9TQVBfU0Uv/U0FQX1NFLUxvZ28u/d2luZS5zdmc",
   },
   "FlashBuild (International Pre-Conference Workshop)": {
     title: "FlashBuild (International Pre-Conference Workshop)",
     certificate: "/__l5e/assets-v1/09467682-b088-469e-9777-d0f84567274b/flasbuild.jpg",
-    logo: "https://www.google.com/s2/favicons?domain=srmist.edu.in&sz=128",
+    logo: "https://imgs.search.brave.com/4iXB3flF0RscuZjDVeHQTMvkxRvV95ARKsITUb9zgxU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZWVr/dmVjdG9ycy5jb20v/c3RvcmFnZS9pbWFn/ZXMvU3JtJTIwVW5p/dmVyc2l0eS0wNC5z/dmc",
   },
   "HackElite’26 – National Hackathon": {
     title: "HackElite’26 – National Hackathon",
     certificate: "/__l5e/assets-v1/c02daa32-7e60-48bb-8987-de2a99676f64/hackelite26.jpeg",
-    logo: "https://www.google.com/s2/favicons?domain=srmist.edu.in&sz=128",
+    logo: "https://imgs.search.brave.com/4iXB3flF0RscuZjDVeHQTMvkxRvV95ARKsITUb9zgxU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZWVr/dmVjdG9ycy5jb20v/c3RvcmFnZS9pbWFn/ZXMvU3JtJTIwVW5p/dmVyc2l0eS0wNC5z/dmc",
   },
   "HackForge’26 – National Hackathon": {
     title: "HackForge’26 – National Hackathon",
     certificate: "/__l5e/assets-v1/6cd462dc-9678-47a6-be35-89c75dd75e39/hackforge26.pdf",
-    logo: "https://www.google.com/s2/favicons?domain=srmist.edu.in&sz=128",
+    logo: "https://imgs.search.brave.com/4iXB3flF0RscuZjDVeHQTMvkxRvV95ARKsITUb9zgxU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZWVr/dmVjdG9ycy5jb20v/c3RvcmFnZS9pbWFn/ZXMvU3JtJTIwVW5p/dmVyc2l0eS0wNC5z/dmc",
   },
   "Introduction to Artificial Intelligence": {
     title: "Introduction to Artificial Intelligence",
     certificate: "/__l5e/assets-v1/c5a06943-d148-4213-ba8b-17e53ede35fb/intro-to-ai.pdf",
-    logo: "https://www.google.com/s2/favicons?domain=wadhwanifoundation.org&sz=128",
+    logo: "https://imgs.search.brave.com/41GaSL9S0yda9ta7GqMiNmU7AIL3wfp78AG2zrxCH2U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/YnJhbmRmZXRjaC5p/by9pZGpLT1JGUUIt/L3cvMTY2Ny9oLzE2/NjcvdGhlbWUvZGFy/ay9pY29uLmpwZWc_/Yz0xYnhpZDY0TXVw/N2FjemV3U0FZTVgm/dD0xNzQ4Mjk1ODQ1/NTE0",
   },
   "Fintech Workshop": {
     title: "Fintech Workshop",
     certificate: "/__l5e/assets-v1/aa8bd6d5-21ff-49a5-a77f-f50757a1d0df/fintech.pdf",
-    logo: "https://www.google.com/s2/favicons?domain=srmist.edu.in&sz=128",
+    logo: "https://imgs.search.brave.com/4iXB3flF0RscuZjDVeHQTMvkxRvV95ARKsITUb9zgxU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZWVr/dmVjdG9ycy5jb20v/c3RvcmFnZS9pbWFn/ZXMvU3JtJTIwVW5p/dmVyc2l0eS0wNC5z/dmc",
   },
   "Introduction to Programming in C": {
     title: "Introduction to Programming in C",
@@ -117,12 +117,12 @@ export const certificationAssets: Record<string, CertificationAsset> = {
   "Introduction to Computer Architecture": {
     title: "Introduction to Computer Architecture",
     certificate: "/__l5e/assets-v1/ae8b91d5-e735-4784-915e-a6a68132488a/intro-to-computerarc.pdf",
-    logo: "https://www.google.com/s2/favicons?domain=infosys.com&sz=128",
+    logo: "https://imgs.search.brave.com/R0D2MowocQQ05_Gejlj-4i0rjFczQRVH7Q8kZ_Du3uk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9nYXRl/d2F5LmVkdS5pbi9p/bWFnZXMvbG9nb3Mv/aW5mb3N5cy1zcHJp/bmdib2FyZC53ZWJw",
   },
   "Introduction to Unix": {
     title: "Introduction to Unix",
     certificate: "/__l5e/assets-v1/7f2b12c7-189a-406c-9e81-257ecd9ea66f/intro-to-unix.pdf",
-    logo: "https://www.google.com/s2/favicons?domain=infosys.com&sz=128",
+    logo: "https://imgs.search.brave.com/R0D2MowocQQ05_Gejlj-4i0rjFczQRVH7Q8kZ_Du3uk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9nYXRl/d2F5LmVkdS5pbi9p/bWFnZXMvbG9nb3Mv/aW5mb3N5cy1zcHJp/bmdib2FyZC53ZWJw",
   },
   "MERN Stack Masterclass": {
     title: "MERN Stack Masterclass",
