@@ -6,13 +6,6 @@ import AssetViewer, { type AssetViewerItem } from "./AssetViewer";
 
 const internships = [
   {
-    role: "Front-end AI Engineer",
-    company: "FlyRank AI",
-    location: "Remote",
-    period: "July 2026 – Present",
-    description: "Currently interning at FlyRank AI as an AI intern, focusing on Front-end AI Engineering.",
-  },
-  {
     role: "AI & Full Stack Engineer",
     company: "SNR Automation Pvt Ltd",
     location: "Hybrid",
