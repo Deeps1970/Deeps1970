@@ -1,7 +1,7 @@
 import { Award, FileCheck, Clock } from "lucide-react";
 import { useState } from "react";
 import SectionGlow from "./SectionGlow";
-import { certificationAssets } from "@/data/portfolioAssets";
+import { certificationAssets, toDirectDropboxImageUrl } from "@/data/portfolioAssets";
 import AssetViewer, { type AssetViewerItem } from "./AssetViewer";
 
 const certifications = [
@@ -34,7 +34,7 @@ const CertificationsSection = () => {
                   <div className="p-2 bg-muted rounded-lg shrink-0 w-10 h-10 flex items-center justify-center overflow-hidden">
                     {asset?.logo ? (
                       <img
-                        src={asset.logo}
+                        src={toDirectDropboxImageUrl(asset.logo)}
                         alt={`${cert.org} logo`}
                         className="w-full h-full object-contain"
                         loading="lazy"
