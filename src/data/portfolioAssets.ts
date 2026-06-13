@@ -65,11 +65,28 @@ export type CertificationAsset = {
   title: string;
   certificate?: string;
   inProgress?: boolean;
+  logo?: string;
 };
 
 export const certificationAssets: Record<string, CertificationAsset> = {
-  "Full Stack Web Development": { title: "Full Stack Web Development", inProgress: true },
-  "MERN Stack Masterclass": { title: "MERN Stack Masterclass", certificate: "https://media.licdn.com/dms/image/v2/D4D2DAQGMLDMufjhwqw/profile-treasury-document-images_1280/B4DZgcsrktGkAY-/1/1752828133321?e=1782345600&v=beta&t=GouX4r9adhlXe69iiEsJw96XH_TvEgIcezImZgU7mx0" },
-  "Full Stack Development Webinar": { title: "Full Stack Development Webinar", certificate: "https://www.dropbox.com/scl/fi/7fgfxjlkic8fxoat92ex6/FSWD-Webinar.Guvi-Participation.png?rlkey=y0cv2a0ujl5u90eh0etvc6plo&st=46wweeqf&dl=0" },
-  "Git & GitHub Workshop": { title: "Git & GitHub Workshop", certificate: "https://media.licdn.com/dms/image/v2/D4D2DAQGpfHZ4iOHFyg/profile-treasury-image-shrink_800_800/B4DZgclOM6HsAY-/0/1752826178841?e=1781845200&v=beta&t=CqP3ceTN5-HXeix9AQSOWMBRfunSzeVgNt9BB4DFEmY" },
+  "Full Stack Web Development": {
+    title: "Full Stack Web Development",
+    inProgress: true,
+    logo: "https://www.google.com/s2/favicons?domain=udemy.com&sz=128",
+  },
+  "MERN Stack Masterclass": {
+    title: "MERN Stack Masterclass",
+    certificate: "https://media.licdn.com/dms/image/v2/D4D2DAQGMLDMufjhwqw/profile-treasury-document-images_1280/B4DZgcsrktGkAY-/1/1752828133321?e=1782345600&v=beta&t=GouX4r9adhlXe69iiEsJw96XH_TvEgIcezImZgU7mx0",
+    logo: "https://www.google.com/s2/favicons?domain=novitech.in&sz=128",
+  },
+  "Full Stack Development Webinar": {
+    title: "Full Stack Development Webinar",
+    certificate: "https://www.dropbox.com/scl/fi/7fgfxjlkic8fxoat92ex6/FSWD-Webinar.Guvi-Participation.png?rlkey=y0cv2a0ujl5u90eh0etvc6plo&st=46wweeqf&dl=0",
+    logo: "https://www.google.com/s2/favicons?domain=guvi.in&sz=128",
+  },
+  "Git & GitHub Workshop": {
+    title: "Git & GitHub Workshop",
+    certificate: "https://media.licdn.com/dms/image/v2/D4D2DAQGpfHZ4iOHFyg/profile-treasury-image-shrink_800_800/B4DZgclOM6HsAY-/0/1752826178841?e=1781845200&v=beta&t=CqP3ceTN5-HXeix9AQSOWMBRfunSzeVgNt9BB4DFEmY",
+    logo: "https://www.google.com/s2/favicons?domain=srmist.edu.in&sz=128",
+  },
 };

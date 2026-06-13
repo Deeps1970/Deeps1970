@@ -31,8 +31,17 @@ const CertificationsSection = () => {
                 className="flex flex-col border border-border rounded-xl p-5 bg-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-xl hover:shadow-accent/10"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-2 bg-muted rounded-lg shrink-0">
-                    <Award size={20} className="text-accent" />
+                  <div className="p-2 bg-muted rounded-lg shrink-0 w-10 h-10 flex items-center justify-center overflow-hidden">
+                    {asset?.logo ? (
+                      <img
+                        src={asset.logo}
+                        alt={`${cert.org} logo`}
+                        className="w-full h-full object-contain"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <Award size={20} className="text-accent" />
+                    )}
                   </div>
                   <div>
                     <h3 className="text-sm font-medium text-foreground">{cert.title}</h3>
