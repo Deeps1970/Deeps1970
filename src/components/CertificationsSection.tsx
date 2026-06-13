@@ -5,10 +5,17 @@ import { certificationAssets, toDirectDropboxImageUrl } from "@/data/portfolioAs
 import AssetViewer, { type AssetViewerItem } from "./AssetViewer";
 
 const certifications = [
-  { title: "Full Stack Web Development", org: "Udemy", year: "2024" },
-  { title: "MERN Stack Masterclass", org: "NoviTech R&D Pvt Ltd", year: "2024" },
-  { title: "Full Stack Development Webinar", org: "Guvi", year: "2024" },
-  { title: "Git & GitHub Workshop", org: "SRM Institute", year: "2024" },
+  { title: "Full Stack Web Development", org: "Udemy", year: "2025-Present" },
+  { title: "Stay Certified – Back-End Developer – ABAP Cloud", org: "SAP", year: "2026" },
+  { title: "Implementing Fund Accounting in SAP S/4HANA Cloud Public Edition", org: "SAP", year: "2026" },
+  { title: "FlashBuild (International Pre-Conference Workshop)", org: "SRM IST Vadapalani Campus", year: "2026" },
+  { title: "HackElite’26 – National Hackathon", org: "DNS (Developer Network Space)", year: "2026" },
+  { title: "HackForge’26 – National Hackathon", org: "SRM IST Vadapalani Campus", year: "2026" },
+  { title: "Introduction to Artificial Intelligence", org: "Wadhwani Foundation", year: "2026" },
+  { title: "Fintech Workshop", org: "SRM IST Vadapalani Campus", year: "2025" },
+  { title: "Introduction to Programming in C", org: "NPTEL", year: "2025" },
+  { title: "Introduction to Computer Architecture", org: "Infosys Springboard", year: "2025" },
+  { title: "Introduction to Unix", org: "Infosys Springboard", year: "2025" },
 ];
 
 const CertificationsSection = () => {
@@ -21,7 +28,7 @@ const CertificationsSection = () => {
         ]}
       />
       <div className="container max-w-6xl mx-auto px-6 py-24 relative z-10">
-        <h2 className="text-3xl font-medium tracking-display text-foreground mb-12">Certifications</h2>
+        <h2 className="text-3xl font-medium tracking-display text-foreground mb-12">Top Certifications</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {certifications.map((cert, i) => {
             const asset = certificationAssets[cert.title];
