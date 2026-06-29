@@ -35,6 +35,12 @@ export const toDirectDropboxImageUrl = (url?: string) => {
 };
 
 export const experienceAssets: Record<string, ExperienceAsset> = {
+  "EcSoc'26": {
+    company: "Elite Coders",
+    logo: "https://www.dropbox.com/scl/fi/nx164j0p70fkwwpbyu4yy/elite_coders_logo.jpg?rlkey=94bn194fxgarmv76aw0bw9yks&st=k584ent2&dl=0",
+    offerLetter: "#",
+    certificate: "#",
+  },
   "SNR Automation Pvt Ltd": {
     company: "SNR Automation Pvt Ltd",
     logo: "https://www.dropbox.com/scl/fi/xybf1lb3pi5pbidnqtffv/snrautomations_logo.jpg?rlkey=0uaqur18ph7wym4qsxvhdbb84&st=na8bprfw&dl=0",
