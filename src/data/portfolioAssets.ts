@@ -39,7 +39,7 @@ export const experienceAssets: Record<string, ExperienceAsset> = {
     company: "Elite Coders",
     logo: "https://www.dropbox.com/scl/fi/nx164j0p70fkwwpbyu4yy/elite_coders_logo.jpg?rlkey=94bn194fxgarmv76aw0bw9yks&st=k584ent2&dl=0",
     offerLetter: "#",
-    certificate: "#",
+    inProgress: true,
   },
   "SNR Automation Pvt Ltd": {
     company: "SNR Automation Pvt Ltd",
