@@ -6,6 +6,13 @@ import AssetViewer, { type AssetViewerItem } from "./AssetViewer";
 
 const internships = [
   {
+    role: "Contributor",
+    company: "Elite Coders",
+    location: "Remote",
+    period: "Jun 2026– Present",
+    description: "Contributed to various Open Source projects through EcSoc'26 at Elite Coders. Collaborated with a diverse team of developers to enhance code quality and functionality. Engaged in community discussions to promote best practices and share knowledge.",
+  },
+  {
     role: "AI & Full Stack Engineer",
     company: "SNR Automation Pvt Ltd",
     location: "Hybrid",
