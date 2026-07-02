@@ -6,6 +6,13 @@ import AssetViewer, { type AssetViewerItem } from "./AssetViewer";
 
 const internships = [
   {
+    role: "Machine Learning Engineer",
+    company: "FlyRank AI",
+    location: "Remote",
+    period: "Jul 2026– Present",
+    description: "Developing AI-powered features using Python, OpenAI APIs, LLMs and modern ML workflows while collaborating with distributed engineering teams.",
+  },
+  {
     role: "Contributor",
     company: "Elite Coders",
     location: "Remote",
