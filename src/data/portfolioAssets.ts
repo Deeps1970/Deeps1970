@@ -35,6 +35,12 @@ export const toDirectDropboxImageUrl = (url?: string) => {
 };
 
 export const experienceAssets: Record<string, ExperienceAsset> = {
+  "FlyRank AI": {
+    company: "FlyRank AI",
+    logo: "https://www.dropbox.com/scl/fi/arpg59ysw1x9em48j3qzz/flyrank_logo.jpg?rlkey=ffnchg850gqfvf16a2jff6pxi&st=34kopfts&dl=0",
+    offerLetter: "https://www.dropbox.com/scl/fi/w7xcbfzpiai3qnp83r6kw/flyrank-internship-confirmation-deepak-thiagarajan-july-2026-6-weeks.pdf?rlkey=edg1hs12rfazr62fxi584epez&st=pels8df0&dl=0",
+    inProgress: true,
+  },
   "Elite Coders": {
     company: "Elite Coders",
     logo: "https://www.dropbox.com/scl/fi/nx164j0p70fkwwpbyu4yy/elite_coders_logo.jpg?rlkey=94bn194fxgarmv76aw0bw9yks&st=k584ent2&dl=0",
