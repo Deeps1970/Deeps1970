@@ -5,7 +5,7 @@
 
 // Resume (Dropbox direct-download link)
 export const RESUME_URL =
-  "https://www.dropbox.com/scl/fi/cv4u26f0bkef4tltzp3f8/Deepak-B-T-Profile.pdf?rlkey=s6otd6gz2n9dmjnic4bx1sop4&st=qnxi46cj&dl=0";
+  "https://www.dropbox.com/scl/fi/939hgcmyttotc6f1uxdro/Deepak-B-T-Profile.pdf?rlkey=pgec427r0dj0lu8gjcb9fuf49&st=padn9zjy&dl=0";
 
 export type ExperienceAsset = {
   company: string;
